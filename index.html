@@ -1,0 +1,1947 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Softies Spin to Win</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Q4 2026 Softies sales agency competition: goals, leaderboards, Cozy Credits and prize drawings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Young+Serif&display=swap">
+<style>
+/* Layout: one centered column (max 1180px) under a sticky header with scrollable pill nav;
+   cards on warm ivory; display serif for big numbers, a friendly sans for everything else. */
+:root {
+  --bg: #FBF7F0;
+  --sunken: #F4ECDF;
+  --card: #FFFDF9;
+  --ink: #3B2A22;
+  --ink-2: #7A6458;
+  --ink-3: #A08C7E;
+  --line: #EADFCF;
+  --berry: #993347;
+  --berry-ink: #FFFFFF;
+  --berry-soft: #F5E3E3;
+  --gold: #B48A33;
+  --gold-soft: #F6ECD5;
+  --pine: #3E5F4E;
+  --pine-soft: #E3EDE6;
+  --almond: #D8C2A3;
+  --espresso: #5B4033;
+  --midnight: #33405A;
+  --blush: #E4B5B2;
+  --warn: #A8641B;
+  --warn-soft: #F8E8D3;
+  --shadow: 0 1px 2px rgba(80, 50, 30, .06), 0 8px 24px rgba(80, 50, 30, .07);
+  --shadow-lg: 0 2px 4px rgba(80, 50, 30, .06), 0 18px 48px rgba(80, 50, 30, .12);
+  --font-display: "Young Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-ui: "Figtree", "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --r-lg: 22px;
+  --r-md: 14px;
+  --r-sm: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1B1411; --sunken: #231A16; --card: #2A201B; --ink: #F3E8DA; --ink-2: #C3AF9F; --ink-3: #94806F;
+    --line: #3D3029; --berry: #E07A8B; --berry-ink: #2A1418; --berry-soft: #3C232A; --gold: #DDB664; --gold-soft: #3A3020;
+    --pine: #8FBEA3; --pine-soft: #213029; --almond: #BFA584; --espresso: #A8836E; --midnight: #8DA0C6; --blush: #D9A3A0;
+    --warn: #E5A55A; --warn-soft: #3A2B1A;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    --shadow-lg: 0 2px 4px rgba(0,0,0,.35), 0 18px 48px rgba(0,0,0,.4);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1B1411; --sunken: #231A16; --card: #2A201B; --ink: #F3E8DA; --ink-2: #C3AF9F; --ink-3: #94806F;
+  --line: #3D3029; --berry: #E07A8B; --berry-ink: #2A1418; --berry-soft: #3C232A; --gold: #DDB664; --gold-soft: #3A3020;
+  --pine: #8FBEA3; --pine-soft: #213029; --almond: #BFA584; --espresso: #A8836E; --midnight: #8DA0C6; --blush: #D9A3A0;
+  --warn: #E5A55A; --warn-soft: #3A2B1A;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --shadow-lg: 0 2px 4px rgba(0,0,0,.35), 0 18px 48px rgba(0,0,0,.4);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--berry); outline-offset: 2px; border-radius: 6px; }
+.num { font-variant-numeric: tabular-nums; }
+.muted { color: var(--ink-2); }
+.small { font-size: 13px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-2); }
+.display { font-family: var(--font-display); font-weight: 400; letter-spacing: -.01em; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Shell ---------- */
+.proto-strip {
+  background: var(--gold-soft); color: var(--ink); font-size: 12.5px;
+  padding-block: 7px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; gap: 8px 14px; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center;
+}
+.proto-strip b { font-weight: 700; }
+.proto-strip .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--ink-3); }
+header.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.top-inner {
+  max-width: 1180px; margin: 0 auto;
+  padding-block: 12px 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.brand-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 11px; margin-right: auto; min-width: 0; }
+.brand-mark {
+  width: 40px; height: 40px; border-radius: 50%; flex: none;
+  background: conic-gradient(var(--berry) 0 25%, var(--gold) 0 50%, var(--pine) 0 75%, var(--almond) 0);
+  position: relative; box-shadow: inset 0 0 0 3px var(--card);
+}
+.brand-mark::after { content: ""; position: absolute; inset: 13px; border-radius: 50%; background: var(--card); }
+.brand-name { font-family: var(--font-display); font-size: 22px; line-height: 1.05; }
+.brand-name span { color: var(--berry); }
+.brand-tag { font-size: 12px; color: var(--ink-2); }
+.who { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px;
+  font-size: 12.5px; font-weight: 600; background: var(--sunken); color: var(--ink); border: 1px solid var(--line); white-space: nowrap;
+}
+.chip svg { width: 14px; height: 14px; }
+.chip.berry { background: var(--berry-soft); color: var(--berry); border-color: transparent; }
+.chip.gold { background: var(--gold-soft); color: var(--gold); border-color: transparent; }
+.chip.pine { background: var(--pine-soft); color: var(--pine); border-color: transparent; }
+.chip.warn { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
+.btn-text { background: none; border: 0; padding: 4px 6px; color: var(--ink-2); font-weight: 600; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
+nav.tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; margin-top: 10px; padding-bottom: 0; }
+nav.tabs::-webkit-scrollbar { display: none; }
+nav.tabs a {
+  flex: none; display: inline-flex; align-items: center; gap: 7px;
+  padding: 10px 14px 12px; color: var(--ink-2); text-decoration: none; font-weight: 600; font-size: 14.5px;
+  border-bottom: 3px solid transparent; white-space: nowrap;
+}
+nav.tabs a svg { width: 16px; height: 16px; }
+nav.tabs a:hover { color: var(--ink); }
+nav.tabs a[aria-current="page"] { color: var(--berry); border-bottom-color: var(--berry); }
+nav.tabs a.locked { opacity: .75; }
+
+main {
+  max-width: 1180px; margin: 0 auto;
+  padding-block: 22px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 20px;
+}
+main > * { min-width: 0; }
+
+/* ---------- Cards & grids ---------- */
+.card { background: var(--card); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 22px; min-width: 0; }
+.card.flat { box-shadow: none; border: 1px solid var(--line); }
+.card.sunken { background: var(--sunken); box-shadow: none; }
+.card-head { display: flex; align-items: baseline; gap: 10px 16px; flex-wrap: wrap; margin-bottom: 14px; }
+.card-head h2, .card-head h3 { margin-right: auto; }
+h2.section { font-family: var(--font-display); font-size: 24px; font-weight: 400; }
+h3.sub { font-size: 16px; font-weight: 700; }
+.grid { display: grid; gap: 16px; }
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+.grid.three { grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+.grid.four { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.split { display: grid; gap: 20px; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+@media (max-width: 900px) { .split { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Agency switcher ---------- */
+.switcher { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 6px; scrollbar-width: thin; }
+.switcher button {
+  flex: none; border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 7px 14px 7px 8px;
+  display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13.5px; color: var(--ink);
+}
+.switcher button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.mini-ring { --p: 0; width: 22px; height: 22px; border-radius: 50%; flex: none;
+  background: conic-gradient(var(--berry) calc(var(--p) * 1%), var(--line) 0); position: relative; }
+.mini-ring::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--card); }
+.switcher button[aria-pressed="true"] .mini-ring::after { background: var(--ink); }
+.scope-note { display: flex; align-items: center; gap: 8px; color: var(--ink-2); font-size: 13px; }
+.scope-note svg { width: 15px; height: 15px; flex: none; }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; padding: 28px; }
+.hero::after {
+  content: ""; position: absolute; right: -60px; top: -60px; width: 240px; height: 240px; border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-soft) 0 55%, transparent 56%);
+  opacity: .8; pointer-events: none;
+}
+.hero > * { position: relative; z-index: 1; }
+@media (max-width: 620px) { .hero::after { width: 150px; height: 150px; right: -50px; top: -50px; opacity: .55; } }
+.hero-top { display: flex; gap: 12px 24px; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; }
+.hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(32px, 5vw, 50px); line-height: 1.02; margin-top: 6px; }
+.goal-line { font-size: 15px; color: var(--ink-2); margin-top: 6px; }
+.goal-line b { color: var(--ink); }
+.big-written { text-align: right; }
+.big-written .val { font-family: var(--font-display); font-size: clamp(36px, 6vw, 58px); line-height: 1; color: var(--berry); }
+@media (max-width: 620px) { .big-written { text-align: left; } }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
+@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.stat { background: var(--sunken); border-radius: var(--r-md); padding: 14px 16px; min-width: 0; }
+.stat .k { font-size: 12.5px; color: var(--ink-2); font-weight: 600; }
+.stat .v { font-family: var(--font-display); font-size: 27px; line-height: 1.15; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.stat .s { font-size: 12.5px; color: var(--ink-2); }
+
+/* ---------- Progress ribbon ---------- */
+.ribbon-wrap { margin-top: 26px; padding-top: 30px; }
+.ribbon { position: relative; height: 30px; border-radius: 999px; background: var(--sunken); box-shadow: inset 0 1px 3px rgba(60, 40, 30, .12); }
+.ribbon-fill {
+  position: absolute; inset: 0 auto 0 0; width: 0; border-radius: 999px;
+  background: linear-gradient(90deg, var(--berry), color-mix(in srgb, var(--berry) 55%, var(--gold)) 70%, var(--gold));
+  transition: width 1.6s cubic-bezier(.2, .8, .2, 1);
+  min-width: 30px;
+}
+.ribbon-fill::after { /* stitching */
+  content: ""; position: absolute; left: 12px; right: 12px; top: 50%; height: 0;
+  border-top: 2px dashed rgba(255, 255, 255, .55); transform: translateY(-50%);
+}
+.ribbon-fill.zero { min-width: 0; }
+.ribbon-fill.zero::after { display: none; }
+.ms { position: absolute; top: -30px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 700; color: var(--ink-3); }
+.ms .tag {
+  padding: 2px 8px 2px 12px; border-radius: 4px 8px 8px 4px; background: var(--card); border: 1px solid var(--line); position: relative; white-space: nowrap;
+}
+.ms .tag::before { content: ""; position: absolute; left: 4px; top: 50%; width: 4px; height: 4px; border-radius: 50%; background: var(--line); transform: translateY(-50%); }
+.ms.hit { color: var(--berry); }
+.ms.hit .tag { border-color: var(--berry); background: var(--berry-soft); }
+.ms.hit .tag::before { background: var(--berry); }
+.ms .pin { width: 2px; height: 38px; background: var(--line); margin-top: -2px; }
+.ms.hit .pin { background: color-mix(in srgb, var(--berry) 40%, transparent); }
+.ms:last-child { transform: translateX(-100%); align-items: flex-end; }
+.ms:last-child .pin { margin-right: 4px; }
+.ribbon-foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 10px; font-size: 13px; color: var(--ink-2); }
+
+.milestone-note { display: flex; gap: 14px; align-items: center; border-radius: var(--r-md); padding: 14px 16px; margin-top: 18px; background: var(--pine-soft); color: var(--ink); }
+.milestone-note svg { width: 26px; height: 26px; flex: none; color: var(--pine); }
+.milestone-note b { color: var(--pine); }
+
+.crushed {
+  margin-top: 20px; border-radius: var(--r-lg); padding: 26px; text-align: center; position: relative; overflow: hidden;
+  background: radial-gradient(120% 140% at 50% 0%, var(--gold-soft), var(--berry-soft));
+}
+.crushed .big { font-family: var(--font-display); font-size: clamp(30px, 6vw, 48px); line-height: 1.05; color: var(--berry); }
+.crushed p { margin-top: 8px; font-size: 16px; }
+.crushed .names { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 14px; }
+
+/* ---------- Lists ---------- */
+.kv { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+.kv:first-child { border-top: 0; }
+.feed { display: grid; gap: 0; }
+.feed-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 11px 0; border-top: 1px solid var(--line); }
+.feed-row:first-child { border-top: 0; }
+.avatar {
+  width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 13px;
+  background: var(--sunken); color: var(--ink); border: 1px solid var(--line); flex: none;
+}
+.feed-row .t { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.feed-row .m { font-size: 12.5px; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.feed-row .r { text-align: right; }
+
+/* ---------- Hang-tag ticket ---------- */
+.ticket {
+  display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px 3px 16px; position: relative;
+  background: var(--gold-soft); color: var(--ink); font-weight: 700; font-size: 13px; border-radius: 4px 999px 999px 4px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.ticket::before { content: ""; position: absolute; left: 6px; top: 50%; width: 5px; height: 5px; border-radius: 50%; background: var(--card); transform: translateY(-50%); box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold) 50%, transparent); }
+.ticket.lg { font-size: 16px; padding: 6px 14px 6px 22px; }
+.ticket.lg::before { left: 8px; width: 7px; height: 7px; }
+.ticket.zero { background: var(--sunken); color: var(--ink-3); }
+.bonus { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 700; background: var(--sunken); color: var(--ink-2); white-space: nowrap; }
+.bonus.base { background: var(--sunken); color: var(--ink); }
+.bonus.t1, .bonus.t2 { background: var(--gold-soft); color: var(--gold); }
+.bonus.new { background: var(--berry-soft); color: var(--berry); }
+.bonus.react { background: var(--pine-soft); color: var(--pine); }
+.bonus.power { background: color-mix(in srgb, var(--midnight) 16%, transparent); color: var(--midnight); }
+.bonus.review { background: var(--warn-soft); color: var(--warn); }
+.bonus.none { background: transparent; color: var(--ink-3); border: 1px dashed var(--line); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+
+/* ---------- Segmented & buttons ---------- */
+.seg { display: inline-flex; background: var(--sunken); border-radius: 999px; padding: 4px; gap: 2px; flex-wrap: wrap; }
+.seg button { border: 0; background: none; padding: 7px 14px; border-radius: 999px; font-weight: 600; font-size: 13.5px; color: var(--ink-2); }
+.seg button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 999px;
+  padding: 11px 20px; font-weight: 700; font-size: 14.5px; background: var(--berry); color: var(--berry-ink);
+  box-shadow: 0 2px 0 color-mix(in srgb, var(--berry) 60%, #000); transition: transform .12s ease, filter .12s;
+}
+.btn:hover { filter: brightness(1.05); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn svg { width: 17px; height: 17px; }
+.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
+.btn.gold { background: var(--gold); color: #fff; box-shadow: 0 2px 0 color-mix(in srgb, var(--gold) 60%, #000); }
+.btn.sm { padding: 7px 14px; font-size: 13px; }
+.btn-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+
+/* ---------- Tables ---------- */
+.table-wrap { overflow-x: auto; margin: 0 -6px; }
+table.t { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.t th { text-align: left; font-size: 12px; font-weight: 700; color: var(--ink-2); letter-spacing: .04em; text-transform: uppercase; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+table.t td { padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+table.t tr:last-child td { border-bottom: 0; }
+table.t td.n, table.t th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.t td.c, table.t th.c { text-align: center; }
+table.t tr.me td { background: var(--gold-soft); }
+.rank { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; font-weight: 800; font-size: 14px; background: var(--sunken); }
+.rank.r1 { background: var(--gold); color: #fff; }
+.rank.r2 { background: color-mix(in srgb, var(--almond) 45%, var(--card)); color: var(--ink); }
+.rank.r3 { background: var(--berry-soft); color: var(--berry); }
+.rank svg { width: 18px; height: 18px; }
+.rep-cell { display: flex; align-items: center; gap: 10px; min-width: 170px; }
+.rep-cell .nm { font-weight: 700; }
+.badges { display: inline-flex; gap: 4px; }
+.badge-ic { width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; }
+.badge-ic svg { width: 13px; height: 13px; }
+.badge-ic.gold { background: var(--gold-soft); color: var(--gold); }
+.badge-ic.berry { background: var(--berry-soft); color: var(--berry); }
+.badge-ic.pine { background: var(--pine-soft); color: var(--pine); }
+.badge-ic.mid { background: color-mix(in srgb, var(--midnight) 16%, transparent); color: var(--midnight); }
+.bar { height: 8px; border-radius: 999px; background: var(--sunken); overflow: hidden; min-width: 70px; }
+.bar > i { display: block; height: 100%; border-radius: 999px; background: var(--berry); }
+.bar.gold > i { background: var(--gold); }
+.bar.pine > i { background: var(--pine); }
+.legend { display: flex; gap: 8px 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-2); margin-top: 12px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+/* ---------- Rep accordions ---------- */
+details.rep { border-top: 1px solid var(--line); }
+details.rep:first-of-type { border-top: 0; }
+details.rep summary {
+  list-style: none; display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; gap: 12px; align-items: center; padding: 14px 4px; cursor: pointer;
+}
+details.rep summary::-webkit-details-marker { display: none; }
+details.rep summary .chev { width: 18px; height: 18px; color: var(--ink-3); transition: transform .2s; }
+details.rep[open] summary .chev { transform: rotate(90deg); }
+details.rep .body { padding: 0 4px 18px; }
+@media (max-width: 560px) { details.rep summary { grid-template-columns: minmax(0, 1fr) auto auto; } details.rep summary .avatar { display: none; } }
+
+/* ---------- Calculator ---------- */
+.rules { display: grid; gap: 8px; margin: 14px 0; }
+.rule { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px 12px; background: var(--sunken); border-radius: var(--r-sm); }
+.rule b { font-weight: 700; }
+.calc { margin-top: 16px; border: 1px dashed var(--almond); border-radius: var(--r-md); padding: 16px; display: grid; gap: 12px; }
+.field { display: grid; gap: 6px; }
+.field label, .lbl { font-size: 12.5px; font-weight: 700; color: var(--ink-2); }
+input[type="number"], input[type="text"], input[type="password"], input[type="date"], select {
+  width: 100%; border: 1px solid var(--line); background: var(--card); border-radius: var(--r-sm); padding: 10px 12px; font-size: 15px;
+}
+.toggles { display: flex; flex-wrap: wrap; gap: 8px; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 13.5px; font-weight: 600; cursor: pointer; user-select: none; }
+.toggle input { accent-color: var(--berry); width: 16px; height: 16px; }
+.calc-out { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.calc-out .eq { font-size: 13px; color: var(--ink-2); }
+
+/* ---------- Drawings ---------- */
+.draw-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; }
+@media (max-width: 640px) { .draw-hero { grid-template-columns: minmax(0, 1fr); } }
+.prize { font-family: var(--font-display); font-size: clamp(44px, 8vw, 72px); line-height: 1; color: var(--berry); }
+.countdown { display: flex; gap: 10px; }
+.countdown .cd { background: var(--sunken); border-radius: var(--r-md); padding: 12px 16px; text-align: center; min-width: 92px; }
+.countdown .cd .v { font-family: var(--font-display); font-size: 30px; line-height: 1.1; }
+.countdown .cd .k { font-size: 12px; color: var(--ink-2); font-weight: 600; }
+.schedule { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 720px) { .schedule { grid-template-columns: minmax(0, 1fr); } }
+.sched { border: 1px solid var(--line); border-radius: var(--r-md); padding: 14px 16px; display: grid; gap: 4px; background: var(--card); }
+.sched.next { border-color: var(--berry); box-shadow: 0 0 0 3px var(--berry-soft); }
+.sched.done { background: var(--sunken); }
+.sched .amt { font-family: var(--font-display); font-size: 26px; }
+.wheel-stage { display: grid; place-items: center; position: relative; padding: 18px 0 8px; }
+.wheel-box { position: relative; width: min(100%, 440px); aspect-ratio: 1; max-width: 100%; }
+.wheel-box canvas { width: 100%; height: 100%; display: block; }
+.pointer {
+  position: absolute; left: 50%; top: -6px; transform: translateX(-50%); width: 30px; height: 38px; z-index: 2;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,.25));
+}
+.wheel-empty { text-align: center; padding: 40px 16px; color: var(--ink-2); }
+.winner-card { margin-top: 16px; border-radius: var(--r-lg); padding: 20px; background: radial-gradient(120% 140% at 50% 0%, var(--gold-soft), var(--berry-soft)); text-align: center; display: grid; gap: 8px; justify-items: center; }
+.winner-card .nm { font-family: var(--font-display); font-size: 34px; line-height: 1.1; color: var(--berry); }
+.confirm-box { border: 1px solid var(--warn); background: var(--warn-soft); border-radius: var(--r-md); padding: 14px; display: grid; gap: 10px; }
+
+/* ---------- Spotlight / email ---------- */
+.email-frame { background: var(--sunken); border-radius: var(--r-lg); padding: 18px; overflow-x: auto; }
+.email-frame > div { margin: 0 auto; max-width: 620px; }
+.shout { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: start; padding: 12px 0; border-top: 1px solid var(--line); }
+.shout:first-child { border-top: 0; }
+.shout .ic { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; }
+.shout .ic svg { width: 17px; height: 17px; }
+
+/* ---------- Admin ---------- */
+.admin-nav { display: flex; gap: 8px; flex-wrap: wrap; }
+.admin-nav a svg { width: 15px; height: 15px; flex: none; }
+.admin-nav a { text-decoration: none; color: var(--ink); font-weight: 600; font-size: 13.5px; padding: 7px 13px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); display: inline-flex; gap: 6px; align-items: center; }
+.count { background: var(--warn); color: #fff; border-radius: 999px; font-size: 11px; padding: 0 7px; font-weight: 800; line-height: 18px; }
+.nat-row { display: grid; grid-template-columns: minmax(130px, 1.2fr) minmax(120px, 3fr) auto; gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); }
+.nat-row:first-child { border-top: 0; }
+@media (max-width: 640px) { .nat-row { grid-template-columns: minmax(0, 1fr) auto; } .nat-row .bar { grid-column: 1 / -1; order: 3; } }
+.trophy-hero { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: center; background: radial-gradient(120% 160% at 0% 0%, var(--gold-soft), var(--card) 70%); border-radius: var(--r-lg); padding: 22px; }
+@media (max-width: 560px) { .trophy-hero { grid-template-columns: minmax(0, 1fr); text-align: center; justify-items: center; } }
+.trophy-hero svg.trophy { width: 108px; height: 108px; }
+.queue-item { display: grid; gap: 10px; padding: 14px 0; border-top: 1px solid var(--line); }
+.queue-item:first-child { border-top: 0; }
+.queue-item .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 10px; align-items: end; }
+.notice { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border-radius: var(--r-md); background: var(--sunken); }
+.notice svg { width: 20px; height: 20px; flex: none; margin-top: 1px; color: var(--ink-2); }
+.notice.warn { background: var(--warn-soft); }
+.notice.warn svg { color: var(--warn); }
+.notice.pine { background: var(--pine-soft); }
+.notice.pine svg { color: var(--pine); }
+ul.clean { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+
+/* ---------- Sign in ---------- */
+.signin { min-height: calc(100vh - 60px); display: grid; place-items: center; padding-block: 32px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.signin-box { width: min(100%, 880px); display: grid; gap: 22px; }
+.signin-hero { text-align: center; display: grid; gap: 8px; justify-items: center; }
+.signin-hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(38px, 7vw, 64px); line-height: 1; }
+.signin-hero h1 span { color: var(--berry); }
+.signin-hero p { font-size: 17px; color: var(--ink-2); }
+.signin-cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.signin-cards form { display: grid; gap: 12px; align-content: start; }
+.err { color: var(--berry); font-size: 13px; font-weight: 600; min-height: 1em; }
+.demo-creds summary { cursor: pointer; font-weight: 700; font-size: 13.5px; }
+.demo-creds code { font-size: 12.5px; background: var(--sunken); padding: 2px 6px; border-radius: 6px; }
+
+/* ---------- Toasts & confetti ---------- */
+#toasts { position: fixed; z-index: 60; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 8px; width: min(92vw, 460px); pointer-events: none; }
+.toast { background: var(--ink); color: var(--bg); padding: 12px 16px; border-radius: 14px; box-shadow: var(--shadow-lg); font-weight: 600; font-size: 14px; animation: toast-in .3s ease; pointer-events: auto; }
+@keyframes toast-in { from { transform: translateY(10px); opacity: 0; } }
+#confetti { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 55; }
+.pop-in { animation: pop .5s cubic-bezier(.2, 1.4, .4, 1); }
+@keyframes pop { from { transform: scale(.92); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+.locked-view { text-align: center; display: grid; gap: 12px; justify-items: center; padding: 48px 22px; }
+.locked-view svg { width: 44px; height: 44px; color: var(--ink-3); }
+.empty { text-align: center; color: var(--ink-2); padding: 26px 10px; }
+
+/* Leaderboard rows become cards on phones */
+@media (max-width: 640px) {
+  table.t.stack thead { display: none; }
+  table.t.stack, table.t.stack tbody { display: block; width: 100%; }
+  table.t.stack tr { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 0; padding: 14px 2px; border-bottom: 1px solid var(--line); }
+  table.t.stack tr:last-child { border-bottom: 0; }
+  table.t.stack td { display: block; border: 0; padding: 0; text-align: left !important; }
+  table.t.stack td.rk { order: 1; flex: 0 0 46px; }
+  table.t.stack td.rp { order: 2; flex: 1 1 0; min-width: 0; }
+  table.t.stack td.rp .rep-cell { min-width: 0; }
+  table.t.stack td.cr { order: 3; flex: none; }
+  table.t.stack td.ctb { order: 4; flex: 0 0 100%; padding-left: 46px; }
+  table.t.stack td.meta { order: 5; flex: none; font-size: 13px; color: var(--ink); padding-right: 14px; }
+  table.t.stack td.meta.m1 { padding-left: 46px; }
+  table.t.stack td.meta::before { content: attr(data-label) " "; color: var(--ink-2); }
+}
+.card.sunken .rule { background: var(--card); }
+@media (max-width: 480px) { nav.tabs a { padding: 10px 9px 12px; font-size: 14px; gap: 5px; } }
+@media (max-width: 420px) { nav.tabs a svg { display: none; } }
+
+</style>
+<div id="app"></div>
+<div id="toasts" aria-live="polite"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<script>
+const FULFIL_SQL = "WITH comp AS (\n  SELECT id, order_number, order_reference, channel_identifier, order_date, state, customer_id, customer_name,\n    sales_person_name, shipment_address_line1, shipment_address_zip, shipment_address_city, shipment_region_code, lines\n  FROM sales_orders\n  WHERE channel_name LIKE '%MarketTime%' AND order_date BETWEEN '2026-10-15' AND '2026-12-15'\n), hist AS (\n  SELECT customer_id, order_date, LOWER(TRIM(shipment_address_line1)) a1, SUBSTR(shipment_address_zip,1,5) z\n  FROM sales_orders\n  WHERE state NOT IN ('cancel','failed','ignored')\n    AND (SELECT SUM(l.amount) FROM UNNEST(lines) l) > 0\n    AND (customer_id IN (SELECT customer_id FROM comp)\n      OR CONCAT(LOWER(TRIM(shipment_address_line1)),'|',SUBSTR(shipment_address_zip,1,5)) IN (SELECT CONCAT(LOWER(TRIM(shipment_address_line1)),'|',SUBSTR(shipment_address_zip,1,5)) FROM comp))\n)\nSELECT c.id, c.order_number AS so, c.order_reference AS po, c.channel_identifier AS mt, CAST(c.order_date AS STRING) AS d,\n  c.state AS st, c.customer_id AS cid, c.customer_name AS cust, c.sales_person_name AS rep,\n  CONCAT(IFNULL(c.shipment_address_city,''), IF(c.shipment_region_code IS NULL,'',CONCAT(', ',c.shipment_region_code))) AS loc,\n  (SELECT IFNULL(SUM(l.amount),0) FROM UNNEST(c.lines) l WHERE IFNULL(l.product_code,'') != 'SHIPPING' AND NOT REGEXP_CONTAINS(LOWER(IFNULL(l.product_code,'')), r'fee')) AS merch,\n  (SELECT IFNULL(SUM(l.amount),0) FROM UNNEST(c.lines) l WHERE l.product_code = 'SHIPPING' OR REGEXP_CONTAINS(LOWER(IFNULL(l.product_code,'')), r'fee')) AS ship,\n  (SELECT COUNT(*) FROM UNNEST(c.lines) l WHERE STARTS_WITH(IFNULL(l.product_code,''), '7800-20') AND l.quantity > 0) AS pw,\n  (SELECT SUBSTR(TO_HEX(MD5(STRING_AGG(CONCAT(IFNULL(l.product_code,''),':',CAST(l.quantity AS STRING),':',CAST(l.amount AS STRING)), ',' ORDER BY l.product_code, l.quantity))),1,10) FROM UNNEST(c.lines) l) AS sig,\n  (SELECT CAST(MAX(h.order_date) AS STRING) FROM hist h WHERE h.customer_id = c.customer_id AND h.order_date < c.order_date) AS lp,\n  (SELECT COUNT(*) FROM hist h WHERE h.customer_id = c.customer_id AND h.order_date < c.order_date) AS np,\n  (SELECT COUNT(*) FROM hist h WHERE h.customer_id != c.customer_id AND h.a1 = LOWER(TRIM(c.shipment_address_line1)) AND h.z = SUBSTR(c.shipment_address_zip,1,5) AND h.order_date < c.order_date) AS am\nFROM comp c ORDER BY c.order_date, c.id\n";
+/* ============================================================
+   Competition engine — pure functions, no DOM.
+   Everything shown in the app is recalculated from raw Fulfil
+   rows + admin settings every time this runs.
+   ============================================================ */
+const CONFIG = {
+  title: "Softies Spin to Win",
+  tagline: "Every Order Counts. Every Rep Can Win.",
+  start: "2026-10-15",
+  end: "2026-12-15",
+  channel: "MarketTime",
+  giftCard: 100,
+  grandPrize: 3000,
+  powerSku: "7800-20",
+  dormantBefore: "2026-01-01",
+  agencies: [
+    { id: "fine-lines", name: "Fine Lines",     goal: 215000, match: /fine\s*lines?/i },
+    { id: "harper",     name: "Harper Group",   goal: 260000, match: /harper/i },
+    { id: "patrick",    name: "Patrick & Co.",  goal: 150000, match: /patrick/i },
+    { id: "schauben",   name: "Schauben & Co.", goal: 300000, match: /schauben/i },
+    { id: "portico",    name: "Portico",        goal: 30000,  match: /portico/i },
+    { id: "ivystone",   name: "Ivystone",       goal: 150000, match: /ivystone/i }
+  ],
+  nonParticipating: [/^\s*DYA\s*$/i],
+  draws: [
+    // Round 1 extended from Oct 30 to Nov 6 (orders written Oct 15 – Nov 6)
+    { id: "oct", date: "2026-11-06", prize: 500,  name: "First Drawing" },
+    { id: "nov", date: "2026-11-20", prize: 750,  name: "Second Drawing" },
+    { id: "dec", date: "2026-12-15", prize: 1000, name: "Final Drawing" }
+  ],
+  credit: { min: 500, tier1: 2500, tier1Bonus: 2, tier2: 5000, tier2Bonus: 5, newBonus: 5, dormantBonus: 3, powerBonus: 2 },
+  excludedStates: ["cancel", "failed", "ignored"],
+  milestones: [25, 50, 75, 100]
+};
+CONFIG.nationalGoal = CONFIG.agencies.reduce((s, a) => s + a.goal, 0);
+
+const Engine = (() => {
+  const num = v => { const n = Number(v); return Number.isFinite(n) ? n : 0; };
+
+  function cleanName(s) {
+    if (!s) return "";
+    s = String(s).replace(/\s+/g, " ").trim();
+    if (s === s.toUpperCase() && /[A-Z]/.test(s)) {
+      s = s.toLowerCase().replace(/(^|[\s'’\-.])([a-z])/g, (m, a, b) => a + b.toUpperCase());
+    }
+    return s;
+  }
+
+  function parseRep(raw) {
+    if (!raw || !String(raw).trim()) return { name: "", suffix: null };
+    const parts = String(raw).split(/\s+[-–]\s*/).map(p => p.trim()).filter(Boolean);
+    if (parts.length > 1) return { name: cleanName(parts.slice(0, -1).join(" - ")), suffix: parts[parts.length - 1] };
+    return { name: cleanName(raw), suffix: null };
+  }
+
+  const agencyById = id => CONFIG.agencies.find(a => a.id === id) || null;
+
+  function matchAgency(text) {
+    if (!text) return null;
+    if (CONFIG.nonParticipating.some(rx => rx.test(text))) return "np";
+    const a = CONFIG.agencies.find(a => a.match.test(text));
+    return a ? a.id : null;
+  }
+
+  /* Who wrote it, and for which agency? Admin overrides win. */
+  function attribute(row, settings) {
+    const ov = settings.orderAssign && settings.orderAssign[row.id];
+    if (ov && ov.agency) return { status: ov.agency === "np" ? "np" : "ok", agencyId: ov.agency, rep: cleanName(ov.rep || parseRep(row.rep).name || "Unassigned"), how: "admin" };
+    const p = parseRep(row.rep);
+    if (!p.name) return { status: "needs-rep", agencyId: null, rep: "", how: null };
+    const bySuffix = matchAgency(p.suffix);
+    if (bySuffix === "np") return { status: "np", agencyId: null, rep: p.name, how: "name" };
+    if (bySuffix) return { status: "ok", agencyId: bySuffix, rep: p.name, how: "name" };
+    const fullName = p.suffix ? cleanName(row.rep) : p.name;
+    const mapped = settings.repAgency && settings.repAgency[fullName];
+    if (mapped === "np") return { status: "np", agencyId: null, rep: fullName, how: "admin" };
+    if (mapped) return { status: "ok", agencyId: mapped, rep: fullName, how: "admin" };
+    return { status: "needs-agency", agencyId: null, rep: fullName, how: null };
+  }
+
+  function creditsFor(amount, flags) {
+    const c = CONFIG.credit, parts = [];
+    if (amount < c.min) return { total: 0, parts };
+    parts.push({ key: "base", label: "Qualifying order $500+", n: 1 });
+    if (amount >= c.tier1) parts.push({ key: "t1", label: "$2,500+ order", n: c.tier1Bonus });
+    if (amount >= c.tier2) parts.push({ key: "t2", label: "$5,000+ order", n: c.tier2Bonus });
+    if (flags.isNew) parts.push({ key: "new", label: "New account", n: c.newBonus });
+    if (flags.dormant) parts.push({ key: "react", label: "Reactivated account", n: c.dormantBonus });
+    if (flags.power) parts.push({ key: "power", label: "Power SKU " + CONFIG.powerSku, n: c.powerBonus });
+    return { total: parts.reduce((s, p) => s + p.n, 0), parts };
+  }
+
+  const normPO = po => (po || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+
+  /* Main pass. opts.asOf limits to orders written on/before that date. */
+  function compute(rawRows, settings, opts) {
+    settings = settings || {};
+    opts = opts || {};
+    const asOf = opts.asOf || null;
+    const excluded = [], queue = [], candidates = [];
+
+    for (const raw of rawRows) {
+      const r = {
+        id: raw.id, so: raw.so || "Draft #" + raw.id, po: raw.po || "", mt: raw.mt, d: raw.d, st: raw.st,
+        cid: raw.cid, cust: (raw.cust || "").trim(), rep: raw.rep, loc: raw.loc || "",
+        merch: num(raw.merch), ship: num(raw.ship), pw: num(raw.pw) > 0, sig: raw.sig || String(raw.id),
+        lp: raw.lp || null, np: num(raw.np), am: num(raw.am)
+      };
+      if (asOf && r.d > asOf) continue;
+      const ex = reason => excluded.push(Object.assign({}, r, { reason }));
+      if (CONFIG.excludedStates.includes(r.st)) { ex("Canceled in Fulfil"); continue; }
+      if (r.d < CONFIG.start || r.d > CONFIG.end) { ex("Written outside Oct 15 – Dec 15"); continue; }
+      if (r.merch < 0) { ex("Return or credit (not new sales)"); continue; }
+      if (r.merch === 0) { ex("$0 order"); continue; }
+      const who = attribute(r, settings);
+      r.who = who;
+      if (who.status === "np") { ex("Agency not in this competition"); continue; }
+      const squash = t => (t || "").toLowerCase().replace(/[^a-z]/g, "");
+      if (who.status === "ok" && who.how !== "admin" && who.rep && squash(r.cust).includes(squash(who.rep))) { ex("Rep's own account (sample/personal order)"); continue; }
+      if (who.status !== "ok") {
+        queue.push(r);
+        ex(who.status === "needs-rep" ? "Waiting on admin: no rep on order" : "Waiting on admin: rep has no agency");
+        continue;
+      }
+      candidates.push(r);
+    }
+
+    // One customer PO = one entry. Identical records = duplicates; different records = a split order.
+    const groups = new Map();
+    for (const r of candidates.sort((a, b) => a.d.localeCompare(b.d) || a.id - b.id)) {
+      const key = r.cid + "|" + (normPO(r.po) || "SO" + r.id);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(r);
+    }
+    const entries = [];
+    const acctBonus = new Set(); // new/reactivated bonus counts once per customer (earliest PO)
+    for (const [key, recs] of groups) {
+      const seen = new Map(), kept = [];
+      for (const r of recs) {
+        const dupKey = r.sig + "|" + r.merch;
+        if (seen.has(dupKey)) { excluded.push(Object.assign({}, r, { reason: "Duplicate of " + seen.get(dupKey).so })); continue; }
+        seen.set(dupKey, r); kept.push(r);
+      }
+      const first = kept[0];
+      const amount = kept.reduce((s, r) => s + r.merch, 0);
+      let newStatus = null, isNew = false;
+      const bonusFree = !acctBonus.has(first.cid);
+      acctBonus.add(first.cid);
+      if (first.np === 0 && bonusFree) {
+        const rv = settings.newReview && settings.newReview[first.cid];
+        if (first.am > 0) newStatus = rv === "approved" ? "approved" : rv === "denied" ? "denied" : "review";
+        else newStatus = rv === "denied" ? "denied" : "new";
+        isNew = newStatus === "new" || newStatus === "approved";
+      }
+      const dormant = bonusFree && first.np > 0 && !!first.lp && first.lp < CONFIG.dormantBefore;
+      const power = kept.some(r => r.pw);
+      const cr = creditsFor(amount, { isNew, dormant, power });
+      const drawIdx = CONFIG.draws.findIndex(dw => first.d <= dw.date);
+      entries.push({
+        key, agencyId: first.who.agencyId, rep: first.who.rep, repKey: first.who.agencyId + "::" + first.who.rep,
+        cid: first.cid, cust: first.cust, loc: first.loc, po: first.po, date: first.d,
+        records: kept.map(r => ({ id: r.id, so: r.so, amount: r.merch, st: r.st })), split: kept.length > 1,
+        amount, isNew, newStatus, dormant, lastPrior: first.lp, power, credits: cr.total, parts: cr.parts,
+        firstDraw: drawIdx, pending: kept.some(r => r.st === "draft")
+      });
+    }
+    entries.sort((a, b) => a.date.localeCompare(b.date) || b.amount - a.amount);
+
+    // Roll up reps and agencies
+    const reps = new Map();
+    for (const e of entries) {
+      if (!reps.has(e.repKey)) reps.set(e.repKey, { key: e.repKey, name: e.rep, agencyId: e.agencyId, sales: 0, orders: 0, creditOrders: 0, newAcc: 0, react: 0, power: 0, credits: 0, entries: [], lastDate: "" });
+      const r = reps.get(e.repKey);
+      r.sales += e.amount; r.orders += 1; r.credits += e.credits;
+      if (e.credits > 0) r.creditOrders += 1;
+      if (e.isNew) r.newAcc += 1;
+      if (e.dormant) r.react += 1;
+      if (e.power) r.power += 1;
+      r.entries.push(e);
+      if (e.date > r.lastDate) r.lastDate = e.date;
+    }
+    const agencies = CONFIG.agencies.map(a => {
+      const list = [...reps.values()].filter(r => r.agencyId === a.id);
+      const sales = list.reduce((s, r) => s + r.sales, 0);
+      list.forEach(r => { r.contribution = a.goal ? r.sales / a.goal : 0; });
+      return {
+        id: a.id, name: a.name, goal: a.goal, sales,
+        orders: list.reduce((s, r) => s + r.orders, 0),
+        credits: list.reduce((s, r) => s + r.credits, 0),
+        newAcc: list.reduce((s, r) => s + r.newAcc, 0),
+        react: list.reduce((s, r) => s + r.react, 0),
+        pct: a.goal ? sales / a.goal : 0,
+        remaining: Math.max(0, a.goal - sales),
+        reps: list,
+        entries: entries.filter(e => e.agencyId === a.id)
+      };
+    });
+    const totalSales = agencies.reduce((s, a) => s + a.sales, 0);
+    return {
+      entries, excluded, queue, agencies,
+      reps: [...reps.values()],
+      national: {
+        goal: CONFIG.nationalGoal, sales: totalSales, pct: totalSales / CONFIG.nationalGoal,
+        orders: agencies.reduce((s, a) => s + a.orders, 0),
+        credits: agencies.reduce((s, a) => s + a.credits, 0),
+        newAcc: agencies.reduce((s, a) => s + a.newAcc, 0),
+        react: agencies.reduce((s, a) => s + a.react, 0)
+      }
+    };
+  }
+
+  /* Sorting for leaderboards; ties broken by sales, then credits, then name. */
+  const SORTS = {
+    credits: (a, b) => b.credits - a.credits || b.sales - a.sales || a.name.localeCompare(b.name),
+    sales:   (a, b) => b.sales - a.sales || b.credits - a.credits || a.name.localeCompare(b.name),
+    newAcc:  (a, b) => b.newAcc - a.newAcc || b.credits - a.credits || b.sales - a.sales || a.name.localeCompare(b.name),
+    react:   (a, b) => b.react - a.react || b.credits - a.credits || b.sales - a.sales || a.name.localeCompare(b.name)
+  };
+  function rank(list, by) { return [...list].sort(SORTS[by] || SORTS.credits).map((r, i) => Object.assign({}, r, { rank: i + 1 })); }
+
+  /* Cozy Credits eligible for a given drawing: everything written on/before the drawing date. */
+  function drawPool(agency, draw) {
+    const pool = agency.reps.map(r => ({
+      key: r.key, name: r.name,
+      credits: r.entries.filter(e => e.date <= draw.date).reduce((s, e) => s + e.credits, 0)
+    })).filter(p => p.credits > 0).sort((a, b) => b.credits - a.credits || a.name.localeCompare(b.name));
+    const total = pool.reduce((s, p) => s + p.credits, 0);
+    pool.forEach(p => { p.chance = total ? p.credits / total : 0; });
+    return { pool, total };
+  }
+
+  /* Weighted pick. rand in [0,1). */
+  function weightedPick(pool, rand) {
+    const total = pool.reduce((s, p) => s + p.credits, 0);
+    if (!total) return null;
+    let t = rand * total;
+    for (const p of pool) { if (t < p.credits) return p; t -= p.credits; }
+    return pool[pool.length - 1];
+  }
+
+  /* Week-over-week movement on the sales leaderboard. */
+  function movement(nowAgency, prevAgency) {
+    const now = rank(nowAgency.reps, "sales"), prev = rank(prevAgency ? prevAgency.reps : [], "sales");
+    const prevRank = new Map(prev.map(r => [r.key, r.rank]));
+    const prevSales = new Map(prev.map(r => [r.key, r.sales]));
+    const moves = now.map(r => ({
+      name: r.name, rank: r.rank,
+      from: prevRank.has(r.key) ? prevRank.get(r.key) : null,
+      jump: (prevRank.has(r.key) ? prevRank.get(r.key) : prev.length + 1) - r.rank,
+      gained: r.sales - (prevSales.get(r.key) || 0)
+    }));
+    moves.sort((a, b) => b.jump - a.jump || b.gained - a.gained);
+    const best = moves.find(m => m.jump > 0 || m.gained > 0) || null;
+    return { best, moves };
+  }
+
+  /* Dates (calendar dates as YYYY-MM-DD strings; New York time) */
+  function todayET(d) {
+    const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(d || new Date());
+    const g = t => parts.find(p => p.type === t).value;
+    return g("year") + "-" + g("month") + "-" + g("day");
+  }
+  function daysBetween(a, b) {
+    const [y1, m1, d1] = a.split("-").map(Number), [y2, m2, d2] = b.split("-").map(Number);
+    return Math.round((Date.UTC(y2, m2 - 1, d2) - Date.UTC(y1, m1 - 1, d1)) / 86400000);
+  }
+  function addDays(a, n) {
+    const [y, m, d] = a.split("-").map(Number);
+    const t = new Date(Date.UTC(y, m - 1, d + n));
+    return t.toISOString().slice(0, 10);
+  }
+
+  return { compute, rank, drawPool, weightedPick, movement, creditsFor, cleanName, parseRep, attribute, todayET, daysBetween, addDays, agencyById, num };
+})();
+
+if (typeof module !== "undefined") module.exports = { CONFIG, Engine };
+
+/* ============================================================
+   Softies Spin to Win — app shell, access control, storage, views
+   ============================================================ */
+
+/* ---------- Icons ---------- */
+const I = (() => {
+  const s = (p, extra) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra || ""}>${p}</svg>`;
+  return {
+    home: s('<path d="M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>'),
+    trophy: s('<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M9 20h6M10 17h4"/>'),
+    ticket: s('<path d="M4 8a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v8a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2z"/><path d="M10 8v8" stroke-dasharray="2 2"/>'),
+    gift: s('<rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18M12 9v11M12 9c-2-4-6-4-6-1.5S10 9 12 9zM12 9c2-4 6-4 6-1.5S14 9 12 9z"/>'),
+    spark: s('<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 1.6L21 18l-1.3.5L19 20l-.6-1.5L17 18l1.4-.4z"/>'),
+    lock: s('<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>'),
+    star: s('<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/>'),
+    store: s('<path d="M4 10h16l-1.5-5h-13zM5 10v9h14v-9M10 19v-5h4v5"/>'),
+    refresh: s('<path d="M20 11a8 8 0 0 0-14.3-4.3L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.3L20 16M20 20v-4h-4"/>'),
+    bolt: s('<path d="M13 3L5 14h6l-1 7 8-11h-6z"/>'),
+    calendar: s('<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>'),
+    chev: s('<path d="M9 6l6 6-6 6"/>'),
+    copy: s('<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>'),
+    download: s('<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>'),
+    shield: s('<path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/>'),
+    info: s('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),
+    alert: s('<path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/>'),
+    users: s('<circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8 0 5 2 5 5"/>'),
+    flag: s('<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>'),
+    database: s('<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/>'),
+    wand: s('<path d="M4 20L16 8M14 6l4 4M18 3v3M21 6h-3M8 4v2M9 5H7"/>'),
+    medal: s('<circle cx="12" cy="15" r="5"/><path d="M8.5 11L6 3h4l2 5 2-5h4l-2.5 8"/>'),
+    check: s('<path d="M5 12l5 5 9-10"/>'),
+    x: s('<path d="M6 6l12 12M18 6L6 18"/>')
+  };
+})();
+
+const TROPHY_ART = `<svg class="trophy" viewBox="0 0 120 120" aria-hidden="true">
+  <defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E9C870"/><stop offset=".55" stop-color="#C69B3C"/><stop offset="1" stop-color="#9C7428"/></linearGradient></defs>
+  <circle cx="60" cy="60" r="56" fill="var(--gold-soft)"/>
+  <path d="M38 26h44v20c0 13-10 23-22 23S38 59 38 46z" fill="url(#tg)"/>
+  <path d="M38 32H27c0 11 6 17 13 18M82 32h11c0 11-6 17-13 18" fill="none" stroke="#C69B3C" stroke-width="5" stroke-linecap="round"/>
+  <rect x="55" y="68" width="10" height="13" fill="#B48A33"/>
+  <rect x="42" y="81" width="36" height="10" rx="3" fill="url(#tg)"/>
+  <rect x="36" y="91" width="48" height="8" rx="3" fill="#8A6A2A"/>
+  <path d="M60 34l3.4 7 7.6 1.1-5.5 5.3 1.3 7.6L60 51.4 53.2 55l1.3-7.6L49 42.1l7.6-1.1z" fill="#FFF6DD"/>
+</svg>`;
+
+/* ---------- Helpers ---------- */
+const $ = (sel, root) => (root || document).querySelector(sel);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const money = (n, dec) => (Number(n) < 0 ? "−$" : "$") + Math.abs(Number(n || 0)).toLocaleString("en-US", { minimumFractionDigits: dec ? 2 : 0, maximumFractionDigits: dec ? 2 : 0 });
+const pct = (x, d) => (x * 100).toFixed(d == null ? (x > 0 && x < 0.1 ? 1 : 0) : d) + "%";
+const plural = (n, w, pl) => n + " " + (n === 1 ? w : (pl || w + "s"));
+const initials = n => (n || "?").split(/\s+/).filter(Boolean).slice(0, 2).map(p => p[0]).join("").toUpperCase();
+const fmtDate = (iso, opts) => { const [y, m, d] = iso.split("-").map(Number); return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", Object.assign({ month: "short", day: "numeric", timeZone: "UTC" }, opts || {})); };
+const fmtLong = iso => fmtDate(iso, { weekday: "long", month: "long", day: "numeric" });
+const fmtStamp = ts => { try { return new Date(ts).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) + " ET"; } catch (e) { return ts; } };
+const titleCust = s => { s = (s || "").trim(); return s === s.toUpperCase() ? Engine.cleanName(s) : s; };
+const safeLS = {
+  get(k) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : null; } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} }
+};
+const safeSS = {
+  get(k) { try { const v = sessionStorage.getItem(k); return v ? JSON.parse(v) : null; } catch (e) { return null; } },
+  set(k, v) { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { sessionStorage.removeItem(k); } catch (e) {} }
+};
+const reduceMotion = () => window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const cap = name => (window.claude && typeof window.claude.use === "function") ? window.claude.use(name).catch(() => null) : Promise.resolve(null);
+
+function toast(msg, ms) {
+  const box = $("#toasts"); const t = document.createElement("div");
+  t.className = "toast"; t.setAttribute("role", "status"); t.textContent = msg;
+  box.appendChild(t); setTimeout(() => t.remove(), ms || 3800);
+}
+
+/* ---------- Agency access (encrypted) ----------
+   Each agency's numbers are packed into this page encrypted with that agency's own access code
+   (PBKDF2-SHA256 key + AES-GCM). The codes themselves are never in the page, so one agency's
+   code cannot open another agency's numbers. Softies admins work from the live shared store. */
+let VAULT = null;
+const normCode = c => String(c || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+const b64d = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function openVault(agencyId, code) {
+  const box = VAULT && VAULT.agencies && VAULT.agencies[agencyId];
+  if (!box) throw new Error("no-data");
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(normCode(code)), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({ name: "PBKDF2", salt: b64d(box.salt), iterations: VAULT.iter, hash: "SHA-256" }, base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+  const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64d(box.iv) }, key, b64d(box.ct));
+  if (!VAULT.z) return JSON.parse(new TextDecoder().decode(pt));
+  const stream = new Blob([pt]).stream().pipeThrough(new DecompressionStream("gzip"));
+  return JSON.parse(await new Response(stream).text());
+}
+
+/* ---------- App state ---------- */
+const state = {
+  session: safeSS.get("s2w.session"),
+  route: "my-agency",
+  agencyId: safeLS.get("s2w.view.agency") || CONFIG.agencies[0].id,
+  sort: "credits",
+  rows: [],
+  dataMeta: { refreshedAt: "", source: "Waiting for the shared store" },
+  payload: null,
+  codes: null,
+  settings: { repAgency: {}, orderAssign: {}, newReview: {} },
+  draws: [],
+  previewDate: null,
+  previewCrush: null,
+  result: null, prev: null,
+  wheel: { drawId: null, spinning: false, angle: 0, pending: null },
+  canEditPage: false
+};
+
+/* Shared-store snapshots arrive frozen (read-only). Work on a plain copy so admin edits
+   (rep mapping, order assignment, reviews) actually change state before they're saved. */
+const thaw = v => JSON.parse(JSON.stringify(v || {}));
+
+/* ---------- Storage adapter ----------
+   Shared mode: the page's `db` capability (all viewers see the same drawings and admin fixes;
+   only editors of this page can write). Local mode: this browser only (demo). */
+const Store = {
+  mode: "local", db: null,
+  async init() {
+    const local = safeLS.get("s2w.local") || {};
+    if (local.settings) state.settings = Object.assign(state.settings, local.settings);
+    if (local.draws) state.draws = local.draws;
+    const db = await cap("db");
+    if (!db) return;
+    this.db = db; this.mode = "shared";
+    db.doc("comp/settings").onSnapshot(snap => {
+      if (snap.exists) { const d = thaw(snap.data()); state.settings = { repAgency: d.repAgency || {}, orderAssign: d.orderAssign || {}, newReview: d.newReview || {} }; recompute(); render(); }
+    }, () => {});
+    db.doc("secret/codes").onSnapshot(snap => {
+      if (snap.exists) { state.codes = thaw(snap.data()).codes || null; if (isAdmin()) render(); }
+    }, () => {});
+    db.doc("comp/draws").onSnapshot(snap => {
+      if (snap.exists) { state.draws = thaw(snap.data()).list || []; recompute(); render(); }
+    }, () => {});
+    db.doc("comp/orders").onSnapshot(async snap => {
+      if (!snap.exists) return;
+      const meta = snap.data();
+      if (!meta.refreshedAt || meta.refreshedAt <= state.dataMeta.refreshedAt) return;
+      try {
+        let rows = [];
+        for (let i = 0; i < (meta.chunks || 0); i++) {
+          const c = await db.doc("comp/orders/chunks/c" + i).get();
+          if (c.exists) rows = rows.concat(c.data().rows || []);
+        }
+        if (rows.length) { state.rows = rows; state.dataMeta = { refreshedAt: meta.refreshedAt, source: "Fulfil refresh shared by a Softies admin" }; recompute(); render(); }
+      } catch (e) { /* keep current data */ }
+    }, () => {});
+    render();
+  },
+  persistLocal() { safeLS.set("s2w.local", { settings: state.settings, draws: state.draws }); },
+  async write(path, data) {
+    if (this.mode !== "shared") { this.persistLocal(); return true; }
+    try { await this.db.doc(path).set(data); return true; }
+    catch (e) {
+      this.persistLocal();
+      toast(e && e.code === "permission_denied" ? "Saved in this browser only. Shared saves need edit access to this page." : "Couldn't save to shared storage. Saved in this browser for now.");
+      return false;
+    }
+  },
+  saveSettings() { return this.write("comp/settings", Object.assign({ updatedAt: new Date().toISOString() }, state.settings)); },
+  saveDraws() { return this.write("comp/draws", { list: state.draws, updatedAt: new Date().toISOString() }); },
+  async saveOrders(rows, meta) {
+    if (this.mode !== "shared") return false;
+    const size = 250, n = Math.ceil(rows.length / size);
+    try {
+      for (let i = 0; i < n; i++) await this.db.doc("comp/orders/chunks/c" + i).set({ rows: rows.slice(i * size, (i + 1) * size) });
+      await this.db.doc("comp/orders").set({ refreshedAt: meta.refreshedAt, chunks: n, count: rows.length });
+      return true;
+    } catch (e) { return false; }
+  }
+};
+
+/* ---------- Compute ---------- */
+const today = () => state.previewDate || Engine.todayET();
+function recompute() {
+  const t = today();
+  state.result = Engine.compute(state.rows, state.settings, { asOf: t });
+  state.prev = Engine.compute(state.rows, state.settings, { asOf: Engine.addDays(t, -7) });
+}
+
+/* ---------- Access control ----------
+   Views never read state.result directly; they get a scope cut to the session's permissions.
+   An agency session receives only its own agency's computed data — no other agency, no national ranks. */
+function scope() {
+  const s = state.session, res = state.result;
+  if (!s) return null;
+  if (s.role === "agency") {
+    const p = state.payload;
+    if (!p || p.agency.id !== s.agencyId) return null;
+    return { role: "agency", agency: p.agency, prevAgency: p.prevAgency, agencies: [p.agency], national: null, all: null };
+  }
+  if (!res) return null;
+  if (s.role === "admin") {
+    const agency = res.agencies.find(a => a.id === state.agencyId) || res.agencies[0];
+    const prev = state.prev.agencies.find(a => a.id === agency.id);
+    return { role: "admin", agency, prevAgency: prev, agencies: res.agencies, national: res.national, all: res };
+  }
+  return null;
+}
+const isAdmin = () => state.session && state.session.role === "admin";
+
+/* ---------- Derived helpers ---------- */
+function drawStatus(agencyId) {
+  const t = today();
+  const list = isAdmin() ? state.draws : ((state.payload && state.payload.draws) || []);
+  return CONFIG.draws.map(d => {
+    const saved = list.find(r => r.agencyId === agencyId && r.drawId === d.id);
+    return Object.assign({}, d, { saved, days: Engine.daysBetween(t, d.date), status: saved ? "done" : (t >= d.date ? "ready" : "upcoming") });
+  });
+}
+const nextDraw = agencyId => drawStatus(agencyId).find(d => d.status !== "done") || null;
+function compTiming() {
+  const t = today();
+  const total = Engine.daysBetween(CONFIG.start, CONFIG.end) + 1;
+  const elapsed = Math.min(total, Math.max(0, Engine.daysBetween(CONFIG.start, t) + 1));
+  return { t, total, elapsed, frac: elapsed / total, left: Math.max(0, Engine.daysBetween(t, CONFIG.end)) };
+}
+function encouragement(a) {
+  const tm = compTiming();
+  const perDay = tm.left > 0 ? a.remaining / tm.left : a.remaining;
+  if (a.pct >= 1) return `Goal crushed! Every rep on the ${a.name} team has a $${CONFIG.giftCard} gift card coming. Keep writing: the drawings and the $3,000 grand prize are still in play.`;
+  if (tm.elapsed >= tm.total) return `Final day! ${money(a.remaining)} stands between ${a.name} and a $${CONFIG.giftCard} gift card for every rep.`;
+  if (a.pct >= tm.frac) return `${a.name} is ahead of pace at ${pct(a.pct)} of goal with ${pct(tm.frac)} of the competition behind us. Keep the cozy momentum going!`;
+  if (a.pct >= tm.frac * 0.6) return `Within reach: about ${money(perDay)} a day over the next ${plural(tm.left, "day")} gets ${a.name} to goal. Every $500+ order also adds raffle entries.`;
+  return `Plenty of runway: ${plural(tm.left, "day")} left to write ${money(a.remaining)}. Open a new account (+5 credits), wake up a dormant one (+3), or add the ${CONFIG.powerSku} Power SKU (+2) to stack your entries.`;
+}
+function milestoneMsg(m, name) {
+  return {
+    25: [`25% milestone reached`, `${name} is a quarter of the way there. The cozy season is officially warming up.`],
+    50: [`Halfway there`, `${name} has written half its goal. Keep those reorders coming!`],
+    75: [`75% milestone reached`, `Three quarters done. The finish line (and a gift card for every rep) is in sight.`],
+    100: [`Goal crushed`, `Every eligible rep earned a $${CONFIG.giftCard} gift card.`]
+  }[m];
+}
+
+/* ---------- Confetti ---------- */
+function confetti(power) {
+  if (reduceMotion()) return;
+  const c = $("#confetti"), ctx = c.getContext("2d");
+  const dpr = window.devicePixelRatio || 1;
+  c.width = innerWidth * dpr; c.height = innerHeight * dpr; ctx.scale(dpr, dpr);
+  const cs = getComputedStyle(document.documentElement);
+  const colors = ["--berry", "--gold", "--pine", "--almond", "--blush", "--midnight"].map(v => cs.getPropertyValue(v).trim());
+  const N = power ? 220 : 120, parts = [];
+  for (let i = 0; i < N; i++) parts.push({
+    x: innerWidth / 2 + (Math.random() - .5) * innerWidth * .5, y: innerHeight * .35 + (Math.random() - .5) * 60,
+    vx: (Math.random() - .5) * 13, vy: -Math.random() * 13 - 4, r: Math.random() * 6 + 4, a: Math.random() * 6.3,
+    va: (Math.random() - .5) * .3, col: colors[i % colors.length], shape: i % 3
+  });
+  let t0 = performance.now();
+  (function frame(t) {
+    const dt = Math.min(32, t - t0) / 16; t0 = t;
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    let alive = 0;
+    for (const p of parts) {
+      p.vy += .32 * dt; p.vx *= .99; p.x += p.vx * dt; p.y += p.vy * dt; p.a += p.va * dt;
+      if (p.y < innerHeight + 20) alive++;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.col;
+      if (p.shape === 0) { ctx.beginPath(); ctx.arc(0, 0, p.r / 2, 0, 6.3); ctx.fill(); }
+      else ctx.fillRect(-p.r / 2, -p.r / 4, p.r, p.r / (p.shape === 1 ? 2 : 1.2));
+      ctx.restore();
+    }
+    if (alive) requestAnimationFrame(frame); else ctx.clearRect(0, 0, innerWidth, innerHeight);
+  })(t0);
+}
+
+/* ---------- Routing ---------- */
+const ROUTES = [
+  { id: "my-agency", label: "My Agency", icon: "home", agency: true },
+  { id: "leaderboard", label: "Leaderboard", icon: "trophy", agency: true },
+  { id: "cozy-credits", label: "Cozy Credits", icon: "ticket" },
+  { id: "prize-drawings", label: "Prize Drawings", icon: "gift", agency: true },
+  { id: "spotlight", label: "Softies Spotlight", icon: "spark" },
+  { id: "admin", label: "Admin", icon: "lock" }
+];
+/* Agency sign-ins get a focused three-tab version; admins see every tab. */
+const visibleRoutes = () => isAdmin() ? ROUTES : ROUTES.filter(r => r.agency);
+function readHash() {
+  const h = (location.hash || "").replace(/^#/, "");
+  state.route = ROUTES.some(r => r.id === h) ? h : "my-agency";
+}
+
+function goRoute(r) { if (location.hash === "#" + r) { readHash(); render(); window.scrollTo(0, 0); } else location.hash = r; }
+
+/* ---------- Shell ---------- */
+function renderShell() {
+  const s = state.session;
+  const app = $("#app");
+  if (!s) { app.innerHTML = renderSignIn(); bindSignIn(); return false; }
+  const agName = s.role === "admin" ? "Softies Admin" : Engine.agencyById(s.agencyId).name;
+  const admin = s.role === "admin";
+  const asOf = admin ? state.dataMeta.refreshedAt : (state.payload && state.payload.dataAsOf);
+  const storeChip = !admin ? "" : Store.mode === "shared"
+    ? `<span class="chip pine" title="Drawings and admin fixes are shared with everyone who opens this page">${I.database} Shared results</span>`
+    : `<span class="chip warn" title="Drawings and admin fixes are saved in this browser only">${I.database} Demo storage</span>`;
+  app.innerHTML = `
+    <div class="proto-strip" role="note">
+      <span>${asOf ? `Fulfil data as of <b>${esc(fmtStamp(asOf))}</b>` : "Loading Fulfil data…"}</span><i class="dot"></i>
+      <span>Updates every morning and afternoon</span>
+      ${state.previewDate ? `<i class="dot"></i><span><b>Previewing ${esc(fmtDate(state.previewDate, { year: "numeric" }))}</b></span>` : ""}
+    </div>
+    <header class="top">
+      <div class="top-inner">
+        <div class="brand-row">
+          <div class="brand">
+            <div class="brand-mark" aria-hidden="true"></div>
+            <div style="min-width:0">
+              <div class="brand-name">Softies <span>Spin to Win</span></div>
+              <div class="brand-tag">${esc(CONFIG.tagline)}</div>
+            </div>
+          </div>
+          <div class="who">
+            <span class="chip ${s.role === "admin" ? "berry" : "gold"}">${s.role === "admin" ? I.shield : I.users} ${esc(agName)}</span>
+            ${storeChip}
+            <button class="btn-text" data-action="signout">Sign out</button>
+          </div>
+        </div>
+        <nav class="tabs" aria-label="Sections">
+          ${visibleRoutes().map(r => `<a href="#${r.id}" ${state.route === r.id ? 'aria-current="page"' : ""} class="${r.id === "admin" && !isAdmin() ? "locked" : ""}">${I[r.icon]}${esc(r.label)}${r.id === "admin" && isAdmin() && adminQueueCount() ? ` <span class="count">${adminQueueCount()}</span>` : ""}</a>`).join("")}
+        </nav>
+      </div>
+    </header>
+    <main id="view"></main>`;
+  return true;
+}
+
+function adminQueueCount() {
+  if (!state.result) return 0;
+  const reps = new Set(state.result.queue.filter(r => r.who.status === "needs-agency").map(r => r.who.rep));
+  const noRep = state.result.queue.filter(r => r.who.status === "needs-rep").length;
+  const reviews = state.result.entries.filter(e => e.newStatus === "review").length;
+  return reps.size + noRep + reviews;
+}
+
+function render() {
+  if (!renderShell()) return;
+  if (!visibleRoutes().some(r => r.id === state.route)) { state.route = "my-agency"; history.replaceState(null, "", "#my-agency"); return render(); }
+  const sc = scope();
+  const view = $("#view");
+  if (!sc) { view.innerHTML = `<div class="card empty">Your session couldn't be matched to an agency. Please sign out and sign in again.</div>`; return; }
+  const fn = { "my-agency": viewAgency, "leaderboard": viewLeaderboard, "cozy-credits": viewCredits, "prize-drawings": viewDrawings, "spotlight": viewSpotlight, "admin": viewAdmin }[state.route];
+  view.innerHTML = fn(sc);
+  afterRender(sc);
+}
+
+/* ---------- Shared bits ---------- */
+function switcherOrScope(sc) {
+  if (sc.role === "admin") {
+    return `<div class="card flat" style="padding:12px 14px">
+      <div class="card-head" style="margin-bottom:8px"><span class="eyebrow">Viewing agency</span><span class="scope-note">${I.shield} Admin view · agency users only see their own agency</span></div>
+      <div class="switcher" role="group" aria-label="Choose agency">
+      ${sc.agencies.map(a => `<button data-action="pick-agency" data-id="${a.id}" aria-pressed="${a.id === sc.agency.id}"><span class="mini-ring" style="--p:${Math.min(100, a.pct * 100).toFixed(1)}"></span>${esc(a.name)}</button>`).join("")}
+      </div></div>`;
+  }
+  return "";
+}
+function bonusChips(e) {
+  if (!e.parts.length) return `<span class="bonus none">Under $500 · counts toward sales</span>` + (e.newStatus === "review" ? ` <span class="bonus review">New account under review</span>` : "");
+  return e.parts.map(p => `<span class="bonus ${p.key}">${esc(p.label)} +${p.n}</span>`).join("") +
+    (e.newStatus === "review" ? `<span class="bonus review" title="Ship-to address matches another Fulfil customer's earlier order">New-account bonus under review</span>` : "");
+}
+const ticket = (n, lg) => `<span class="ticket ${lg ? "lg" : ""} ${n ? "" : "zero"}" title="Cozy Credits">${n}</span>`;
+
+/* ================= MY AGENCY ================= */
+function viewAgency(sc) {
+  let a = sc.agency;
+  if (state.previewCrush === a.id) a = Object.assign({}, a, { sales: Math.max(a.sales, a.goal), pct: Math.max(1, a.pct), remaining: 0 });
+  const tm = compTiming();
+  const p = Math.min(1, a.pct);
+  const hit = CONFIG.milestones.filter(m => a.pct * 100 >= m);
+  const top = hit[hit.length - 1];
+  const ranked = Engine.rank(a.reps, "credits");
+  const nd = nextDraw(a.id);
+  const recent = [...a.entries].sort((x, y) => y.date.localeCompare(x.date) || y.amount - x.amount).slice(0, 6);
+  const perDay = tm.left > 0 ? a.remaining / tm.left : a.remaining;
+  return `
+  ${switcherOrScope(sc)}
+  <section class="card hero" aria-labelledby="ag-name">
+    <div class="hero-top">
+      <div>
+        <div class="eyebrow">Q4 Sales Competition · Oct 15 – Dec 15, 2026</div>
+        <h1 id="ag-name">${esc(a.name)}</h1>
+        <div class="goal-line">Agency goal <b class="num">${money(a.goal)}</b></div>
+      </div>
+      <div class="big-written">
+        <div class="eyebrow">Qualifying sales written</div>
+        <div class="val num" data-count="${a.sales}">${money(a.sales)}</div>
+      </div>
+    </div>
+    <div class="ribbon-wrap" aria-label="Progress to goal: ${pct(a.pct, 1)}">
+      <div class="ribbon">
+        <div class="ribbon-fill ${a.sales ? "" : "zero"}" data-w="${(p * 100).toFixed(2)}"></div>
+        ${CONFIG.milestones.map(m => `<div class="ms ${a.pct * 100 >= m ? "hit" : ""}" style="left:${m}%"><span class="tag">${m}%</span><span class="pin"></span></div>`).join("")}
+      </div>
+      <div class="ribbon-foot"><span class="num"><b>${pct(a.pct, 1)}</b> of goal</span><span class="num">${pct(tm.frac)} of the competition calendar has passed</span></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="k">Percent of goal</div><div class="v">${pct(a.pct, 1)}</div><div class="s">${a.pct >= tm.frac ? "Ahead of pace" : "Behind pace"}</div></div>
+      <div class="stat"><div class="k">Remaining to goal</div><div class="v">${money(a.remaining)}</div><div class="s">${a.remaining ? `≈ ${money(perDay)} / day` : "Goal met"}</div></div>
+      <div class="stat"><div class="k">Days remaining</div><div class="v">${tm.left}</div><div class="s">until Dec 15</div></div>
+      <div class="stat"><div class="k">Orders written</div><div class="v">${a.orders}</div><div class="s">${plural(a.entries.filter(e => e.credits).length, "earns", "earn")} credits</div></div>
+    </div>
+    ${a.pct >= 1 ? `
+      <div class="crushed pop-in" role="status">
+        <div class="eyebrow" style="color:var(--berry)">${I.trophy.replace("<svg", '<svg style="width:16px;height:16px;vertical-align:-3px"')} 100% of goal</div>
+        <div class="big">GOAL CRUSHED!</div>
+        <p>Your entire team just earned a <b>$${CONFIG.giftCard} gift card</b>!</p>
+        ${a.reps.length ? `<div class="names">${a.reps.map(r => `<span class="chip gold">${I.gift} ${esc(r.name)}</span>`).join("")}</div>` : ""}
+        ${state.previewCrush === a.id ? `<p class="small muted">Preview only. Real totals are unchanged.</p>` : ""}
+      </div>` : top ? `
+      <div class="milestone-note">${I.spark}<div><b>${esc(milestoneMsg(top, a.name)[0])}.</b> ${esc(milestoneMsg(top, a.name)[1])}</div></div>` : `
+      <div class="milestone-note">${I.flag}<div><b>First milestone at 25%:</b> ${money(a.goal * .25 - a.sales > 0 ? a.goal * .25 - a.sales : 0)} to go. ${esc(encouragement(a))}</div></div>`}
+  </section>
+
+  <div class="grid three">
+    <div class="card">
+      <div class="eyebrow">Top Cozy Credit earner</div>
+      ${ranked[0] ? `<div style="display:flex;gap:12px;align-items:center;margin-top:10px"><span class="rank r1">${I.trophy}</span><div style="min-width:0"><div style="font-weight:700;font-size:17px">${esc(ranked[0].name)}</div><div class="small muted">${money(ranked[0].sales)} written</div></div><span style="margin-left:auto">${ticket(ranked[0].credits, true)}</span></div>` : `<p class="muted" style="margin-top:10px">No qualifying orders yet. The first $500 order takes the lead.</p>`}
+    </div>
+    <div class="card">
+      <div class="eyebrow">Next prize drawing</div>
+      ${nd ? `<div style="display:flex;gap:12px;align-items:baseline;margin-top:8px;flex-wrap:wrap"><span class="display" style="font-size:34px;color:var(--berry)">${money(nd.prize)}</span><span class="muted">${esc(fmtLong(nd.date))}</span></div>
+      <div class="small muted">${nd.days > 0 ? `${plural(nd.days, "day")} away` : nd.days === 0 ? "Drawing today!" : "Ready to draw"} · ${Engine.drawPool(a, nd).total} eligible entries</div>` : `<p class="muted" style="margin-top:10px">All three drawings are complete.</p>`}
+    </div>
+    <div class="card">
+      <div class="eyebrow">Team Cozy Credits</div>
+      <div style="display:flex;gap:10px;align-items:center;margin-top:10px">${ticket(a.credits, true)}<span class="muted small">raffle entries earned</span></div>
+      <div class="chips" style="margin-top:12px"><span class="bonus new">${plural(a.newAcc, "new account")}</span><span class="bonus react">${a.react} reactivated</span></div>
+    </div>
+  </div>
+
+  ${sc.role !== "admin" ? "" : `<div class="card">
+    <div class="card-head"><h2 class="section">Latest orders</h2><a class="btn-text" href="#cozy-credits">See every credit</a></div>
+    ${recent.length ? `<div class="feed">${recent.map(e => `
+      <div class="feed-row">
+        <span class="avatar">${esc(initials(e.rep))}</span>
+        <div style="min-width:0"><div class="t">${esc(titleCust(e.cust))}</div><div class="m">${esc(e.rep)} · ${esc(fmtDate(e.date))}${e.isNew ? " · New account" : e.dormant ? " · Reactivated" : ""}${e.pending ? " · Pending in Fulfil" : ""}</div></div>
+        <div class="r"><div class="num" style="font-weight:700">${money(e.amount)}</div>${ticket(e.credits)}</div>
+      </div>`).join("")}</div>` : `<div class="empty">No qualifying orders yet for ${esc(a.name)}.</div>`}
+  </div>`}`;
+}
+
+/* ================= LEADERBOARD ================= */
+function viewLeaderboard(sc) {
+  const a = sc.agency;
+  const ranked = Engine.rank(a.reps, state.sort);
+  const leaders = {
+    credits: Math.max(0, ...a.reps.map(r => r.credits)),
+    sales: Math.max(0, ...a.reps.map(r => r.sales)),
+    newAcc: Math.max(0, ...a.reps.map(r => r.newAcc)),
+    react: Math.max(0, ...a.reps.map(r => r.react))
+  };
+  const sorts = [["credits", "Cozy Credits"], ["sales", "Sales $"], ["newAcc", "New accounts"], ["react", "Reactivated"]];
+  const maxContrib = Math.max(0.0001, ...a.reps.map(r => r.contribution));
+  return `
+  ${switcherOrScope(sc)}
+  <section class="card">
+    <div class="card-head">
+      <div style="margin-right:auto"><div class="eyebrow">${esc(a.name)} · ${plural(a.reps.length, "rep")}</div><h2 class="section">Rep leaderboard</h2></div>
+      <div class="seg" role="group" aria-label="Sort leaderboard">${sorts.map(([k, l]) => `<button data-action="sort" data-sort="${k}" aria-pressed="${state.sort === k}">${l}</button>`).join("")}</div>
+    </div>
+    ${sc.role === "agency" ? `<p class="scope-note" style="margin-bottom:10px">${I.lock} You're seeing ${esc(a.name)} reps only. Other agencies' results stay private.</p>` : ""}
+    ${ranked.length ? `<div class="table-wrap"><table class="t stack">
+      <thead><tr><th>Rank</th><th>Sales rep</th><th class="n">Sales written</th><th>% of agency goal</th><th class="n">Orders</th><th class="n">New accts</th><th class="n">Reactivated</th><th class="n">Cozy Credits</th></tr></thead>
+      <tbody>${ranked.map(r => {
+        const icons = [];
+        if (r.credits && r.credits === leaders.credits) icons.push(`<span class="badge-ic gold" title="Most Cozy Credits">${I.ticket}</span>`);
+        if (r.sales && r.sales === leaders.sales) icons.push(`<span class="badge-ic berry" title="Top sales writer">${I.star}</span>`);
+        if (r.newAcc && r.newAcc === leaders.newAcc) icons.push(`<span class="badge-ic pine" title="Most new accounts">${I.store}</span>`);
+        if (r.react && r.react === leaders.react) icons.push(`<span class="badge-ic mid" title="Most reactivations">${I.refresh}</span>`);
+        return `<tr>
+          <td class="rk"><span class="rank r${r.rank <= 3 ? r.rank : ""}">${r.rank === 1 ? I.trophy : r.rank}</span></td>
+          <td class="rp"><div class="rep-cell"><span class="nm">${esc(r.name)}</span><span class="badges">${icons.join("")}</span></div></td>
+          <td class="n meta m1" data-label="Sales">${money(r.sales)}</td>
+          <td class="ctb"><div style="display:flex;align-items:center;gap:8px"><div class="bar" style="flex:1"><i style="width:${(r.contribution / maxContrib * 100).toFixed(1)}%"></i></div><span class="num small" style="min-width:44px;text-align:right">${pct(r.contribution, 1)}</span></div></td>
+          <td class="n meta" data-label="Orders">${r.orders}</td><td class="n meta" data-label="New accts">${r.newAcc}</td><td class="n meta" data-label="Reactivated">${r.react}</td>
+          <td class="n cr">${ticket(r.credits)}</td></tr>`;
+      }).join("")}</tbody></table></div>
+      <div class="legend"><span><span class="badge-ic gold">${I.ticket}</span>Most Cozy Credits</span><span><span class="badge-ic berry">${I.star}</span>Top sales writer</span><span><span class="badge-ic pine">${I.store}</span>Most new accounts</span><span><span class="badge-ic mid">${I.refresh}</span>Most reactivations</span></div>
+      <div class="btn-row" style="margin-top:16px"><button class="btn ghost sm" data-action="csv">${I.download} Save as CSV</button></div>`
+      : `<div class="empty">No qualifying orders yet. The leaderboard fills in as orders are written.</div>`}
+  </section>`;
+}
+
+/* ================= COZY CREDITS ================= */
+function viewCredits(sc) {
+  const a = sc.agency;
+  const ranked = Engine.rank(a.reps, "credits");
+  const c = CONFIG.credit;
+  return `
+  ${switcherOrScope(sc)}
+  <div class="split">
+    <section class="card">
+      <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">${esc(a.name)}</div><h2 class="section">Cozy Credits by rep</h2></div>${ticket(a.credits, true)}</div>
+      ${ranked.length ? ranked.map((r, i) => `
+        <details class="rep" ${i === 0 ? "open" : ""}>
+          <summary>
+            <span class="avatar">${esc(initials(r.name))}</span>
+            <div style="min-width:0"><div style="font-weight:700">${esc(r.name)}</div><div class="small muted">${money(r.sales)} · ${plural(r.orders, "order")}</div></div>
+            ${ticket(r.credits)}
+            <span class="chev">${I.chev}</span>
+          </summary>
+          <div class="body"><div class="table-wrap"><table class="t">
+            <thead><tr><th>Date</th><th>Customer</th><th class="n">Order amount</th><th>Bonus categories</th><th class="n">Credits</th></tr></thead>
+            <tbody>${r.entries.map(e => `<tr>
+              <td class="num" style="white-space:nowrap">${esc(fmtDate(e.date))}</td>
+              <td><div style="font-weight:600">${esc(titleCust(e.cust))}</div><div class="small muted">PO ${esc(e.po || "—")} · ${e.records.map(x => esc(x.so)).join(" + ")}${e.split ? " (split order, counted once)" : ""}${e.pending ? " · draft in Fulfil" : ""}</div></td>
+              <td class="n">${money(e.amount)}</td>
+              <td><div class="chips">${bonusChips(e)}</div></td>
+              <td class="n"><b>${e.credits}</b></td></tr>`).join("")}
+            <tr><td colspan="4" style="text-align:right;font-weight:700">Total accumulated credits</td><td class="n">${ticket(r.credits)}</td></tr>
+            </tbody></table></div></div>
+        </details>`).join("") : `<div class="empty">No qualifying orders yet.</div>`}
+    </section>
+    <aside class="card sunken">
+      <div class="eyebrow">How Cozy Credits work</div>
+      <h2 class="section" style="margin-top:4px">Every credit is a raffle entry</h2>
+      <div class="rules">
+        <div class="rule"><span>Every qualifying order of <b>$500+</b></span><span class="bonus base">+1</span></div>
+        <div class="rule"><span>Order of <b>$2,500+</b></span><span class="bonus t1">+${c.tier1Bonus}</span></div>
+        <div class="rule"><span>Order of <b>$5,000+</b></span><span class="bonus t2">+${c.tier2Bonus}</span></div>
+        <div class="rule"><span><b>New account</b> opened</span><span class="bonus new">+${c.newBonus}</span></div>
+        <div class="rule"><span><b>Dormant account</b> reactivated (no order yet in 2026)</span><span class="bonus react">+${c.dormantBonus}</span></div>
+        <div class="rule"><span>Featured <b>Power SKU ${esc(CONFIG.powerSku)}</b> on the order</span><span class="bonus power">+${c.powerBonus}</span></div>
+      </div>
+      <p class="small muted">Tiers stack. Bonuses apply to orders of $500 or more. One customer PO counts as one order, even when Fulfil splits it into several records.</p>
+      <div class="calc" aria-labelledby="calc-h">
+        <div id="calc-h" style="font-weight:700">Try it</div>
+        <div class="field"><label for="calc-amt">Order amount</label><input id="calc-amt" type="number" min="0" step="50" value="5000" inputmode="decimal"></div>
+        <div class="toggles">
+          <label class="toggle"><input type="checkbox" id="calc-new" checked> New account</label>
+          <label class="toggle"><input type="checkbox" id="calc-dorm"> Reactivated</label>
+          <label class="toggle"><input type="checkbox" id="calc-pw"> Power SKU</label>
+        </div>
+        <div class="calc-out" aria-live="polite"><span class="eq" id="calc-eq"></span><span id="calc-total"></span></div>
+      </div>
+    </aside>
+  </div>`;
+}
+function updateCalc() {
+  const amt = Number(($("#calc-amt") || {}).value || 0);
+  if (!$("#calc-amt")) return;
+  const r = Engine.creditsFor(amt, { isNew: $("#calc-new").checked, dormant: $("#calc-dorm").checked, power: $("#calc-pw").checked });
+  $("#calc-eq").textContent = r.parts.length ? r.parts.map(p => p.n).join(" + ") + " =" : "Under $500 earns no credits, but still counts toward sales.";
+  $("#calc-total").innerHTML = ticket(r.total, true);
+}
+
+/* ================= PRIZE DRAWINGS ================= */
+function viewDrawings(sc) {
+  const a = sc.agency;
+  const st = drawStatus(a.id);
+  const nd = st.find(d => d.status !== "done");
+  if (!state.wheel.drawId || !st.some(d => d.id === state.wheel.drawId && d.status !== "done")) state.wheel.drawId = nd ? nd.id : null;
+  const sel = st.find(d => d.id === state.wheel.drawId);
+  const pool = sel ? Engine.drawPool(a, sel) : { pool: [], total: 0 };
+  const winners = st.filter(d => d.saved);
+  const pend = state.wheel.pending && state.wheel.pending.agencyId === a.id && state.wheel.pending.drawId === (sel && sel.id) ? state.wheel.pending : null;
+  return `
+  ${switcherOrScope(sc)}
+  <section class="card hero">
+    ${nd ? `<div class="draw-hero">
+      <div>
+        <div class="eyebrow">Next drawing · ${esc(a.name)}</div>
+        <div class="prize num">${money(nd.prize)}</div>
+        <div style="font-size:17px;margin-top:6px">gift card · <b>${esc(fmtLong(nd.date))}</b></div>
+        <p class="muted small" style="margin-top:6px">Eligible orders: written ${esc(fmtDate(CONFIG.start))} – ${esc(fmtDate(nd.date))}. Every credit earned in that window is an entry.</p>
+      </div>
+      <div class="countdown">
+        <div class="cd"><div class="v num">${nd.days > 0 ? nd.days : nd.days === 0 ? "Today" : "Now"}</div><div class="k">${nd.days > 0 ? (nd.days === 1 ? "day to go" : "days to go") : nd.days === 0 ? "drawing today" : "ready to draw"}</div></div>
+        <div class="cd"><div class="v num">${Engine.drawPool(a, nd).total}</div><div class="k">eligible entries</div></div>
+      </div>
+    </div>` : `<div class="eyebrow">All drawings complete</div><h2 class="section" style="margin-top:6px">Thanks for a cozy season, ${esc(a.name)}!</h2>`}
+  </section>
+
+  <div class="schedule">${st.map(d => `
+    <div class="sched ${d.status === "done" ? "done" : nd && d.id === nd.id ? "next" : ""}">
+      <div class="eyebrow">${esc(d.name)}</div>
+      <div class="amt num">${money(d.prize)}</div>
+      <div class="small muted">${esc(fmtLong(d.date))}</div>
+      <div class="small"><span class="muted">Eligible orders</span> <b class="num">${esc(fmtDate(CONFIG.start))} – ${esc(fmtDate(d.date))}</b></div>
+      <div style="margin-top:6px">${d.status === "done" ? `<span class="chip gold">${I.trophy} ${esc(d.saved.winnerName)}</span>` : d.status === "ready" ? `<span class="chip berry">${I.gift} Ready to draw</span>` : `<span class="chip">${I.calendar} ${plural(d.days, "day")} away</span>`}</div>
+    </div>`).join("")}
+  </div>
+
+  <div class="split">
+    <section class="card">
+      <div class="card-head">
+        <div style="margin-right:auto"><div class="eyebrow">The wheel</div><h2 class="section">${sel ? esc(sel.name) : "No open drawings"}</h2></div>
+        ${st.filter(d => d.status !== "done").length > 1 ? `<div class="seg" role="group" aria-label="Choose drawing">${st.filter(d => d.status !== "done").map(d => `<button data-action="pick-draw" data-id="${d.id}" aria-pressed="${sel && sel.id === d.id}">${esc(d.name.split(" ")[0])}</button>`).join("")}</div>` : ""}
+      </div>
+      ${sel && pool.total ? `
+        <div class="wheel-stage">
+          <div class="wheel-box">
+            <svg class="pointer" viewBox="0 0 30 38" aria-hidden="true"><path d="M15 37L2 8a13 13 0 0 1 26 0z" fill="var(--ink)"/><circle cx="15" cy="11" r="5" fill="var(--gold)"/></svg>
+            <canvas id="wheel" role="img" aria-label="Prize wheel weighted by Cozy Credits"></canvas>
+          </div>
+        </div>
+        <p class="small muted" style="text-align:center">Each rep's slice is sized by their eligible Cozy Credits. More credits, bigger slice, better odds.</p>
+        ${pend ? `
+          <div class="winner-card pop-in" role="status">
+            <div class="eyebrow">The wheel picked</div>
+            <div class="nm">${esc(pend.winnerName)}</div>
+            <div class="muted">${plural(pend.entries, "entry", "entries")} of ${pend.total} · ${pct(pend.chance, 1)} chance · ${money(sel.prize)} gift card</div>
+            ${isAdmin() ? `<div class="btn-row" style="justify-content:center;margin-top:6px">
+              <button class="btn" data-action="confirm-winner">${I.check} Confirm & save winner</button>
+              <button class="btn ghost" data-action="spin">${I.refresh} Spin again</button></div>
+              <p class="small muted">Nothing is saved until you confirm.</p>` : ""}
+          </div>` : isAdmin() ? `
+          <div class="btn-row" style="justify-content:center;margin-top:14px">
+            <button class="btn gold" data-action="spin" ${state.wheel.spinning ? "disabled" : ""}>${I.gift} Spin the wheel</button>
+          </div>
+          ${sel.status === "upcoming" ? `<p class="small" style="text-align:center;margin-top:8px;color:var(--warn)">Heads up: this drawing is scheduled for ${esc(fmtDate(sel.date))}. Entries can still grow before then.</p>` : ""}` : `
+          <div class="notice" style="margin-top:14px">${I.info}<div>Softies runs each drawing live on the drawing date. Winners show up here as soon as they're confirmed.</div></div>`}
+      ` : `<div class="wheel-empty">${sel ? "No eligible entries yet for this drawing. Write a $500+ order to get on the wheel!" : "Every drawing for this agency is complete."}</div>`}
+    </section>
+
+    <aside class="grid" style="align-content:start">
+      <section class="card">
+        <div class="card-head"><h3 class="sub">Entries${sel ? " for " + esc(sel.name.split(" ")[0]) : ""}</h3>${sel ? `<span class="small muted num">${pool.total} total</span>` : ""}</div>
+        ${pool.pool.length ? `<div class="table-wrap"><table class="t"><thead><tr><th>Rep</th><th class="n">Entries</th><th class="n">Chance</th></tr></thead><tbody>
+          ${pool.pool.map((p, i) => `<tr><td><span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:${wheelColor(i, pool.pool.length)};margin-right:8px;vertical-align:0"></span>${esc(p.name)}</td><td class="n">${p.credits}</td><td class="n"><div style="display:flex;gap:8px;align-items:center;justify-content:flex-end"><div class="bar gold" style="width:60px"><i style="width:${(p.chance * 100).toFixed(1)}%"></i></div>${pct(p.chance, 1)}</div></td></tr>`).join("")}
+        </tbody></table></div>` : `<p class="muted">No entries yet.</p>`}
+      </section>
+      <section class="card">
+        <div class="card-head"><h3 class="sub">Previous winners</h3></div>
+        ${winners.length ? winners.map(d => `<div class="kv"><div><div style="font-weight:700">${esc(d.saved.winnerName)}</div><div class="small muted">${esc(d.name)} · ${plural(d.saved.entries, "entry", "entries")} of ${d.saved.total}</div></div><div style="text-align:right"><div class="num" style="font-weight:700">${money(d.prize)}</div>${isAdmin() ? `<button class="btn-text" data-action="void-ask" data-id="${d.id}">Undo</button>` : ""}</div></div>
+          ${state.voidAsk === a.id + ":" + d.id ? `<div class="confirm-box"><div><b>Remove this saved result?</b> The ${esc(d.name)} can then be drawn again.</div><div class="btn-row"><button class="btn sm" data-action="void" data-id="${d.id}">Remove result</button><button class="btn ghost sm" data-action="void-cancel">Keep it</button></div></div>` : ""}`).join("") : `<p class="muted">No winners yet. The first drawing is ${esc(fmtLong(CONFIG.draws[0].date))}.</p>`}
+        <p class="small muted" style="margin-top:12px">Winning doesn't use up credits. Every credit stays in for the later drawings.</p>
+      </section>
+    </aside>
+  </div>`;
+}
+
+const WHEEL_TOKENS = ["--berry", "--gold", "--pine", "--almond", "--midnight", "--blush", "--espresso", "--warn"];
+// n = number of slices; keeps the last slice from matching the first one it touches
+function wheelColor(i, n) {
+  const L = WHEEL_TOKENS.length;
+  let k = i % L; if (n > 1 && i === n - 1 && k === 0) k = 2;
+  return getComputedStyle(document.documentElement).getPropertyValue(WHEEL_TOKENS[k]).trim() || "#999";
+}
+
+function drawWheel(pool, angle) {
+  const cv = $("#wheel"); if (!cv) return;
+  const box = cv.parentElement.getBoundingClientRect();
+  const size = Math.max(200, Math.floor(box.width)), dpr = window.devicePixelRatio || 1;
+  if (cv.width !== size * dpr) { cv.width = size * dpr; cv.height = size * dpr; }
+  const ctx = cv.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, size, size);
+  const cx = size / 2, cy = size / 2, R = size / 2 - 10;
+  const cs = getComputedStyle(document.documentElement);
+  const card = cs.getPropertyValue("--card").trim(), ink = cs.getPropertyValue("--ink").trim(), line = cs.getPropertyValue("--line").trim();
+  const total = pool.reduce((s, p) => s + p.credits, 0);
+  // rim
+  ctx.beginPath(); ctx.arc(cx, cy, R + 7, 0, Math.PI * 2); ctx.fillStyle = ink; ctx.fill();
+  let a0 = angle - Math.PI / 2;
+  pool.forEach((p, i) => {
+    const sw = p.credits / total * Math.PI * 2;
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, R, a0, a0 + sw); ctx.closePath();
+    ctx.fillStyle = wheelColor(i, pool.length); ctx.fill();
+    ctx.strokeStyle = card; ctx.lineWidth = 2; ctx.stroke();
+    if (sw > 0.12) {
+      const mid = a0 + sw / 2, flip = Math.cos(mid) < 0;
+      ctx.save(); ctx.translate(cx, cy); ctx.rotate(flip ? mid + Math.PI : mid);
+      const k = (pool.length > 1 && i === pool.length - 1 && i % WHEEL_TOKENS.length === 0) ? 2 : i % WHEEL_TOKENS.length;
+      ctx.fillStyle = (k === 3 || k === 5) ? "#3B2A22" : "#FFFFFF";
+      const fs = Math.max(11, Math.min(16, size / 28));
+      ctx.font = `700 ${fs}px Figtree, system-ui, sans-serif`; ctx.textAlign = flip ? "left" : "right"; ctx.textBaseline = "middle";
+      let label = p.name; const maxW = R * .62;
+      while (ctx.measureText(label).width > maxW && label.length > 4) label = label.slice(0, -2);
+      if (label !== p.name) label = label.trim() + "…";
+      ctx.fillText(label, flip ? -(R - 16) : R - 16, 0);
+      ctx.restore();
+    }
+    a0 += sw;
+  });
+  // stud dots on rim
+  for (let k = 0; k < 24; k++) { const t = k / 24 * Math.PI * 2; ctx.beginPath(); ctx.arc(cx + Math.cos(t) * (R + 3.5), cy + Math.sin(t) * (R + 3.5), 1.8, 0, 6.3); ctx.fillStyle = "rgba(255,240,210,.85)"; ctx.fill(); }
+  // hub
+  ctx.beginPath(); ctx.arc(cx, cy, R * .17, 0, Math.PI * 2); ctx.fillStyle = card; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = line; ctx.stroke();
+  ctx.fillStyle = cs.getPropertyValue("--berry").trim(); ctx.font = `400 ${Math.max(12, R * .1)}px "Young Serif", Georgia, serif`; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText("Softies", cx, cy + 1);
+}
+
+function cryptoRand() { const u = new Uint32Array(1); crypto.getRandomValues(u); return u[0] / 4294967296; }
+
+function spin() {
+  if (!isAdmin() || state.wheel.spinning) return;
+  const sc = scope(), a = sc.agency;
+  const sel = drawStatus(a.id).find(d => d.id === state.wheel.drawId);
+  if (!sel) return;
+  const { pool, total } = Engine.drawPool(a, sel);
+  const winner = Engine.weightedPick(pool, cryptoRand());
+  if (!winner) return;
+  state.wheel.pending = null;
+  // Angle (wheel coordinates, 0 = pointer) of a random point inside the winner's slice
+  let start = 0; for (const p of pool) { if (p.key === winner.key) break; start += p.credits / total * Math.PI * 2; }
+  const sw = winner.credits / total * Math.PI * 2;
+  const theta = start + sw * (0.15 + 0.7 * cryptoRand());
+  const from = state.wheel.angle % (Math.PI * 2);
+  let target = -theta; while (target < from) target += Math.PI * 2;
+  target += Math.PI * 2 * (reduceMotion() ? 1 : 6);
+  const dur = reduceMotion() ? 600 : 5600, t0 = performance.now();
+  state.wheel.spinning = true;
+  const btn = document.querySelector('[data-action="spin"]'); if (btn) btn.disabled = true;
+  (function frame(t) {
+    const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 4);
+    state.wheel.angle = from + (target - from) * e;
+    drawWheel(pool, state.wheel.angle);
+    if (k < 1) requestAnimationFrame(frame);
+    else {
+      state.wheel.spinning = false;
+      state.wheel.pending = { agencyId: a.id, drawId: sel.id, winnerKey: winner.key, winnerName: winner.name, entries: winner.credits, total, chance: winner.credits / total };
+      render(); confetti(true);
+    }
+  })(t0);
+}
+
+async function confirmWinner() {
+  const p = state.wheel.pending; if (!p || !isAdmin()) return;
+  const d = CONFIG.draws.find(x => x.id === p.drawId);
+  state.draws = state.draws.filter(r => !(r.agencyId === p.agencyId && r.drawId === p.drawId));
+  state.draws.push(Object.assign({}, p, { prize: d.prize, date: d.date, savedAt: new Date().toISOString(), dataAsOf: state.dataMeta.refreshedAt }));
+  state.wheel.pending = null;
+  await Store.saveDraws();
+  toast(`Saved: ${p.winnerName} wins the ${d.name} (${money(d.prize)}).`);
+  render();
+}
+
+/* ================= SPOTLIGHT / WEEKLY ================= */
+function weekly(sc) {
+  const a = sc.agency;
+  const top = Engine.rank(a.reps, "sales").slice(0, 3);
+  const mv = Engine.movement(a, sc.prevAgency);
+  const nd = nextDraw(a.id);
+  const weekStart = Engine.addDays(today(), -6);
+  const newThisWeek = a.entries.filter(e => e.isNew && e.date >= weekStart).length;
+  let moverText = "No movement yet this week. The next order could shake things up!";
+  if (mv.best) {
+    const b = mv.best;
+    moverText = b.from == null ? `${b.name} jumped onto the board at #${b.rank} with ${money(b.gained)} this week.`
+      : b.jump > 0 ? `${b.name} climbed from #${b.from} to #${b.rank}, adding ${money(b.gained)} this week.`
+      : `${b.name} held #${b.rank} and added ${money(b.gained)} this week.`;
+  }
+  return { a, top, moverText, nd, newThisWeek, msg: encouragement(a), weekStart, tm: compTiming() };
+}
+function emailHTML(w) {
+  const a = w.a, p = Math.min(100, a.pct * 100);
+  const C = { bg: "#FBF7F0", card: "#FFFFFF", ink: "#3B2A22", mute: "#7A6458", berry: "#993347", gold: "#B48A33", goldSoft: "#F6ECD5", line: "#EADFCF", sunk: "#F4ECDF" };
+  const cell = (k, v) => `<td style="padding:12px;background:${C.sunk};border-radius:10px;width:33%;vertical-align:top"><div style="font-size:12px;color:${C.mute};font-weight:600">${k}</div><div style="font-family:Georgia,serif;font-size:22px;color:${C.ink}">${v}</div></td>`;
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.bg};font-family:Helvetica,Arial,sans-serif;color:${C.ink}"><tr><td style="padding:24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background:${C.card};border-radius:16px;border:1px solid ${C.line}">
+<tr><td style="padding:26px 26px 8px">
+  <div style="font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:${C.mute};font-weight:700">Softies Spin to Win · Weekly snapshot · ${esc(fmtDate(w.weekStart))} – ${esc(fmtDate(w.tm.t))}</div>
+  <div style="font-family:Georgia,serif;font-size:30px;line-height:1.15;margin-top:6px">${esc(a.name)}</div>
+  <div style="font-size:14px;color:${C.mute};margin-top:2px">${esc(CONFIG.tagline)}</div>
+</td></tr>
+<tr><td style="padding:14px 26px">
+  <div style="font-size:14px"><b style="font-size:20px;color:${C.berry}">${money(a.sales)}</b> of ${money(a.goal)} goal · <b>${pct(a.pct, 1)}</b></div>
+  <div style="height:14px;background:${C.sunk};border-radius:99px;margin-top:8px;overflow:hidden"><div style="height:14px;width:${p.toFixed(1)}%;min-width:${a.sales ? 14 : 0}px;background:${C.berry};border-radius:99px"></div></div>
+  <div style="font-size:12px;color:${C.mute};margin-top:6px">${money(a.remaining)} to go · ${plural(w.tm.left, "day")} left · ${plural(a.orders, "order")} written</div>
+</td></tr>
+<tr><td style="padding:6px 26px"><table role="presentation" width="100%" cellpadding="0" cellspacing="6"><tr>${cell("Cozy Credits earned", a.credits)}${cell("New accounts", a.newAcc + (w.newThisWeek ? ` <span style="font-size:12px;color:${C.mute}">(+${w.newThisWeek} this week)</span>` : ""))}${cell("Reactivated", a.react)}</tr></table></td></tr>
+<tr><td style="padding:14px 26px 4px"><div style="font-weight:700;font-size:15px">Top three sales reps</div>
+  ${w.top.length ? w.top.map((r, i) => `<div style="padding:9px 0;border-top:1px solid ${C.line};font-size:14px">${["🥇", "🥈", "🥉"][i]} <b>${esc(r.name)}</b> · ${money(r.sales)} · ${r.credits} credits</div>`).join("") : `<div style="font-size:14px;color:${C.mute}">The podium is wide open!</div>`}
+</td></tr>
+<tr><td style="padding:10px 26px"><div style="font-weight:700;font-size:15px">Biggest move</div><div style="font-size:14px;margin-top:4px">${esc(w.moverText)}</div></td></tr>
+<tr><td style="padding:10px 26px"><div style="background:${C.goldSoft};border-radius:12px;padding:14px">
+  ${w.nd ? `<div style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:${C.gold};font-weight:700">Next prize drawing</div><div style="font-family:Georgia,serif;font-size:24px;margin-top:2px">${money(w.nd.prize)} gift card</div><div style="font-size:14px">${esc(fmtLong(w.nd.date))} · ${w.nd.days > 0 ? plural(w.nd.days, "day") + " away" : "today"}</div>` : `<div style="font-size:14px">All drawings are complete. Grand prize announced Dec 15!</div>`}
+</div></td></tr>
+<tr><td style="padding:10px 26px 26px"><div style="font-size:15px;line-height:1.5">${esc(w.msg)}</div>
+  <div style="font-size:12px;color:${C.mute};margin-top:14px">Every $500+ order = 1 Cozy Credit · $2,500+ = +2 · $5,000+ = +5 · New account +5 · Reactivated +3 · Power SKU ${esc(CONFIG.powerSku)} +2</div></td></tr>
+</table></td></tr></table>`;
+}
+function emailText(w) {
+  const a = w.a;
+  return [
+    `SOFTIES SPIN TO WIN · ${a.name} · Weekly snapshot (${fmtDate(w.weekStart)} – ${fmtDate(w.tm.t)})`,
+    ``,
+    `Goal progress: ${money(a.sales)} of ${money(a.goal)} (${pct(a.pct, 1)}) · ${money(a.remaining)} to go · ${plural(w.tm.left, "day")} left`,
+    `Orders written: ${a.orders} · Cozy Credits earned: ${a.credits} · New accounts: ${a.newAcc} · Reactivated: ${a.react}`,
+    ``,
+    `Top three sales reps:`,
+    ...(w.top.length ? w.top.map((r, i) => `  ${i + 1}. ${r.name} – ${money(r.sales)} (${r.credits} credits)`) : ["  The podium is wide open!"]),
+    ``,
+    `Biggest move: ${w.moverText}`,
+    w.nd ? `Next prize drawing: ${money(w.nd.prize)} gift card on ${fmtLong(w.nd.date)}` : `All drawings complete.`,
+    ``,
+    w.msg
+  ].join("\n");
+}
+function viewSpotlight(sc) {
+  const w = weekly(sc), a = w.a;
+  const newAccts = a.entries.filter(e => e.isNew), reacts = a.entries.filter(e => e.dormant), power = a.entries.filter(e => e.power);
+  const biggest = [...a.entries].sort((x, y) => y.amount - x.amount)[0];
+  return `
+  ${switcherOrScope(sc)}
+  <div class="split">
+    <section class="card">
+      <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">Weekly competition snapshot</div><h2 class="section">Ready to send to ${esc(a.name)}</h2></div></div>
+      <div class="btn-row" style="margin-bottom:14px">
+        <button class="btn" data-action="copy-email">${I.copy} Copy for email</button>
+        <button class="btn ghost" data-action="copy-text">${I.copy} Copy as plain text</button>
+        <button class="btn ghost" data-action="save-email">${I.download} Save .html</button>
+      </div>
+      <div class="email-frame"><div id="email-preview">${emailHTML(w)}</div></div>
+      <p class="small muted" style="margin-top:10px">"Copy for email" keeps the formatting when you paste into Gmail or Outlook. Numbers update every time the page refreshes.</p>
+    </section>
+    <aside class="grid" style="align-content:start">
+      <section class="card">
+        <div class="card-head"><h3 class="sub">Shout-outs</h3></div>
+        ${biggest ? `<div class="shout"><span class="ic" style="background:var(--gold-soft);color:var(--gold)">${I.star}</span><div><b>Biggest order:</b> ${esc(biggest.rep)} wrote ${money(biggest.amount)} with ${esc(titleCust(biggest.cust))}.</div></div>` : ""}
+        ${newAccts.map(e => `<div class="shout"><span class="ic" style="background:var(--berry-soft);color:var(--berry)">${I.store}</span><div><b>New account:</b> ${esc(titleCust(e.cust))}${e.loc ? ` <span class="muted">(${esc(e.loc.replace(/, US-/, ", "))})</span>` : ""}, opened by ${esc(e.rep)}.</div></div>`).join("")}
+        ${reacts.map(e => `<div class="shout"><span class="ic" style="background:var(--pine-soft);color:var(--pine)">${I.refresh}</span><div><b>Welcome back:</b> ${esc(titleCust(e.cust))} reactivated by ${esc(e.rep)}.</div></div>`).join("")}
+        ${!biggest ? `<p class="muted">Shout-outs appear as orders come in.</p>` : ""}
+      </section>
+      <section class="card sunken">
+        <div class="eyebrow">Power SKU spotlight</div>
+        <h3 class="display" style="font-size:26px;margin-top:4px">${esc(CONFIG.powerSku)}</h3>
+        <p style="margin-top:6px">Add style ${esc(CONFIG.powerSku)} to any $500+ order for <b>+2 Cozy Credits</b>.</p>
+        <p class="small muted" style="margin-top:8px">${power.length ? `${plural(power.length, "order")} with the Power SKU so far.` : "No Power SKU orders yet. Be the first!"}</p>
+      </section>
+    </aside>
+  </div>`;
+}
+
+/* ================= ADMIN ================= */
+function viewAdmin(sc) {
+  if (sc.role !== "admin") {
+    return `<section class="card locked-view">${I.lock}<h2 class="section">Admin access required</h2>
+      <p class="muted" style="max-width:52ch">The national overview, the grand prize ranking and drawing controls are for Softies administrators. Agency teams see their own agency only.</p>
+      <button class="btn ghost" data-action="signout">Sign in as an administrator</button></section>`;
+  }
+  const res = sc.all, n = sc.national;
+  const grand = Engine.rank(res.reps, "sales");
+  const topW = grand[0];
+  const needsAgency = {};
+  res.queue.filter(r => r.who.status === "needs-agency").forEach(r => { (needsAgency[r.who.rep] = needsAgency[r.who.rep] || []).push(r); });
+  const needsRep = res.queue.filter(r => r.who.status === "needs-rep");
+  const reviews = res.entries.filter(e => e.newStatus === "review");
+  const decided = res.entries.filter(e => e.newStatus === "approved" || e.newStatus === "denied");
+  const qCount = Object.keys(needsAgency).length + needsRep.length + reviews.length;
+  const agencyOpts = sel => CONFIG.agencies.map(a => `<option value="${a.id}" ${sel === a.id ? "selected" : ""}>${esc(a.name)}</option>`).join("") + `<option value="np" ${sel === "np" ? "selected" : ""}>Not in this competition</option>`;
+  const tm = compTiming();
+  return `
+  <section class="card">
+    <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">Softies administrators only</div><h2 class="section">Admin</h2></div></div>
+    <nav class="admin-nav" aria-label="Admin sections">
+      <a href="#admin" data-jump="adm-national">${I.flag} National overview</a>
+      <a href="#admin" data-jump="adm-grand">${I.trophy} Grand prize</a>
+      <a href="#admin" data-jump="adm-queue">${I.alert} Needs attention ${qCount ? `<span class="count">${qCount}</span>` : ""}</a>
+      <a href="#admin" data-jump="adm-data">${I.database} Data & rules</a>
+      <a href="#admin" data-jump="adm-demo">${I.wand} Demo tools</a>
+      <a href="#admin" data-jump="adm-codes">${I.lock} Agency access codes</a>
+    </nav>
+  </section>
+
+  <section class="card" id="adm-national">
+    <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">All six agencies</div><h2 class="section">National overview</h2></div><span class="chip">${plural(tm.left, "day")} left</span></div>
+    <div class="hero-top" style="margin-bottom:6px">
+      <div><div class="display num" style="font-size:44px;color:var(--berry);line-height:1">${money(n.sales)}</div><div class="muted">of ${money(n.goal)} combined national target</div></div>
+      <div class="display num" style="font-size:34px">${pct(n.pct, 1)}</div>
+    </div>
+    <div class="ribbon" style="margin:10px 0 18px"><div class="ribbon-fill ${n.sales ? "" : "zero"}" data-w="${Math.min(100, n.pct * 100).toFixed(2)}"></div></div>
+    <div class="stats" style="margin-top:0;margin-bottom:12px">
+      <div class="stat"><div class="k">Orders written</div><div class="v">${n.orders}</div></div>
+      <div class="stat"><div class="k">Cozy Credits</div><div class="v">${n.credits}</div></div>
+      <div class="stat"><div class="k">New accounts</div><div class="v">${n.newAcc}</div></div>
+      <div class="stat"><div class="k">Reactivated</div><div class="v">${n.react}</div></div>
+    </div>
+    ${[...sc.agencies].sort((x, y) => y.pct - x.pct).map(a => `<div class="nat-row">
+      <div><button class="btn-text" style="padding:0;font-size:15px;color:var(--ink);font-weight:700" data-action="open-agency" data-id="${a.id}">${esc(a.name)}</button><div class="small muted num">${money(a.sales)} of ${money(a.goal)}</div></div>
+      <div class="bar" style="height:12px"><i style="width:${Math.min(100, a.pct * 100).toFixed(1)}%;min-width:${a.sales ? 6 : 0}px"></i></div>
+      <div class="num" style="text-align:right;font-weight:700">${pct(a.pct, 1)}<div class="small muted" style="font-weight:400">${plural(a.orders, "order")} · ${a.credits} cr</div></div>
+    </div>`).join("")}
+  </section>
+
+  <section class="card" id="adm-grand">
+    <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">$${CONFIG.grandPrize.toLocaleString()} gift card · announced Dec 15</div><h2 class="section">National grand prize</h2></div><span class="chip berry">${I.lock} Confidential until announcement</span></div>
+    <p class="muted small" style="margin-bottom:14px">Not a raffle: the rep with the most qualifying sales dollars written Oct 15 – Dec 15 wins. Agency users never receive this ranking.</p>
+    ${topW ? `<div class="trophy-hero">${TROPHY_ART}<div><div class="eyebrow">Current top writer</div><div class="display" style="font-size:34px;line-height:1.1;margin-top:4px">${esc(topW.name)}</div>
+      <div class="muted">${esc(Engine.agencyById(topW.agencyId).name)} · <b class="num" style="color:var(--ink)">${money(topW.sales)}</b> written · ${plural(topW.orders, "order")}</div>
+      ${grand[1] ? `<div class="small muted" style="margin-top:6px">Lead over #2: <b class="num">${money(topW.sales - grand[1].sales)}</b></div>` : ""}</div></div>` : `<div class="empty">No qualifying orders yet.</div>`}
+    ${grand.length ? `<div class="table-wrap" style="margin-top:14px"><table class="t"><thead><tr><th>Rank</th><th>Rep</th><th>Agency</th><th class="n">Sales written</th><th class="n">Orders</th><th class="n">Credits</th></tr></thead><tbody>
+      ${grand.map(r => `<tr><td><span class="rank r${r.rank <= 3 ? r.rank : ""}">${r.rank === 1 ? I.trophy : r.rank}</span></td><td style="font-weight:700">${esc(r.name)}</td><td class="muted">${esc(Engine.agencyById(r.agencyId).name)}</td><td class="n">${money(r.sales)}</td><td class="n">${r.orders}</td><td class="n">${r.credits}</td></tr>`).join("")}
+    </tbody></table></div>` : ""}
+  </section>
+
+  <section class="card" id="adm-queue">
+    <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">These orders aren't counted until resolved</div><h2 class="section">Needs attention</h2></div>${qCount ? `<span class="chip warn">${qCount} to review</span>` : `<span class="chip pine">${I.check} All clear</span>`}</div>
+    <div class="grid two">
+      <div class="card flat">
+        <h3 class="sub">Reps without an agency</h3>
+        <p class="small muted">The Fulfil sales person name has no agency suffix. Assign once and every order from this rep follows.</p>
+        ${Object.keys(needsAgency).length ? Object.entries(needsAgency).map(([rep, rows], i) => `<div class="queue-item">
+          <div><b>${esc(rep)}</b> <span class="small muted">· ${plural(rows.length, "order")} · ${money(rows.reduce((s, r) => s + r.merch, 0))}</span><div class="small muted">${rows.map(r => esc(r.so) + " " + esc(titleCust(r.cust))).join(", ")}</div></div>
+          <div class="row"><div class="field"><label for="ra-${i}">Agency</label><select id="ra-${i}" data-rep="${esc(rep)}"><option value="">Choose…</option>${agencyOpts("")}</select></div><button class="btn sm" data-action="map-rep" data-sel="ra-${i}">Save</button></div>
+        </div>`).join("") : `<p class="muted" style="margin-top:10px">Nothing waiting.</p>`}
+        ${Object.keys(state.settings.repAgency).length ? `<p class="small muted" style="margin-top:10px">Mapped: ${Object.entries(state.settings.repAgency).map(([r, a]) => `${esc(r)} → ${esc(a === "np" ? "not in competition" : Engine.agencyById(a).name)} <button class="btn-text" data-action="unmap-rep" data-rep="${esc(r)}">undo</button>`).join(" · ")}</p>` : ""}
+      </div>
+      <div class="card flat">
+        <h3 class="sub">Orders with no rep</h3>
+        <p class="small muted">Assign the agency and rep who wrote it.</p>
+        ${needsRep.length ? needsRep.map(r => `<div class="queue-item">
+          <div><b>${esc(titleCust(r.cust))}</b> <span class="small muted">· ${esc(r.so)} · ${esc(fmtDate(r.d))} · ${money(r.merch)}${r.st === "draft" ? " · draft" : ""}</span></div>
+          <div class="row">
+            <div class="field"><label for="oa-${r.id}">Agency</label><select id="oa-${r.id}"><option value="">Choose…</option>${agencyOpts("")}</select></div>
+            <div class="field"><label for="or-${r.id}">Rep name</label><input id="or-${r.id}" type="text" list="rep-names" placeholder="e.g. Brandy Noonan"></div>
+            <button class="btn sm" data-action="assign-order" data-id="${r.id}">Save</button>
+          </div></div>`).join("") : `<p class="muted" style="margin-top:10px">Nothing waiting.</p>`}
+        ${Object.keys(state.settings.orderAssign).length ? `<p class="small muted" style="margin-top:10px">Assigned: ${Object.entries(state.settings.orderAssign).map(([id, v]) => `#${esc(id)} → ${esc(v.rep)} (${esc(v.agency === "np" ? "not in competition" : Engine.agencyById(v.agency).name)}) <button class="btn-text" data-action="unassign-order" data-id="${esc(id)}">undo</button>`).join(" · ")}</p>` : ""}
+        <datalist id="rep-names">${[...new Set(res.reps.map(r => r.name))].map(n => `<option value="${esc(n)}"></option>`).join("")}</datalist>
+      </div>
+    </div>
+    <div class="card flat" style="margin-top:16px">
+      <h3 class="sub">New-account bonus reviews</h3>
+      <p class="small muted">First order from this customer, but the ship-to address matches a different Fulfil customer's earlier order. Under the "truly new" rule, approve only if it's a separate business.</p>
+      ${reviews.length ? reviews.map(e => `<div class="queue-item"><div><b>${esc(titleCust(e.cust))}</b> <span class="small muted">· ${esc(e.loc)} · ${esc(e.rep)} (${esc(Engine.agencyById(e.agencyId).name)}) · ${money(e.amount)}</span></div>
+        <div class="btn-row"><button class="btn sm" data-action="review" data-cid="${e.cid}" data-v="approved">${I.check} Approve +5 new-account credits</button><button class="btn ghost sm" data-action="review" data-cid="${e.cid}" data-v="denied">Not a new account</button></div></div>`).join("") : `<p class="muted" style="margin-top:10px">Nothing waiting.</p>`}
+      ${decided.length ? `<p class="small muted" style="margin-top:10px">Decided: ${decided.map(e => `${esc(titleCust(e.cust))} → ${e.newStatus} <button class="btn-text" data-action="review" data-cid="${e.cid}" data-v="">undo</button>`).join(" · ")}</p>` : ""}
+    </div>
+  </section>
+
+  <section class="card" id="adm-data">
+    <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">Source of truth</div><h2 class="section">Data & rules</h2></div>
+      <button class="btn" data-action="refresh-fulfil" id="refresh-btn">${I.refresh} Refresh from Fulfil</button></div>
+    <div class="grid three">
+      <div class="stat"><div class="k">Last refreshed</div><div class="v" style="font-size:20px">${esc(fmtStamp(state.dataMeta.refreshedAt))}</div><div class="s">${esc(state.dataMeta.source)}</div></div>
+      <div class="stat"><div class="k">Fulfil records in window</div><div class="v">${state.rows.length}</div><div class="s">MarketTime channel, Oct 15 – Dec 15</div></div>
+      <div class="stat"><div class="k">Counted / set aside</div><div class="v">${res.entries.length} / ${res.excluded.length}</div><div class="s">customer POs / records</div></div>
+    </div>
+    <div class="grid two" style="margin-top:16px">
+      <div>
+        <h3 class="sub" style="margin-bottom:8px">How totals are calculated</h3>
+        <ul class="clean small">
+          <li>MarketTime orders from Fulfil with an <b>order date</b> (date written, not ship date) of Oct 15 – Dec 15, 2026.</li>
+          <li>Sales = merchandise lines; shipping and fee lines are left out.</li>
+          <li>Canceled, failed and ignored orders are excluded. Returns, credits and $0 orders don't count.</li>
+          <li>One customer PO = one entry. Records with the same customer + PO are combined (split orders); identical records are dropped as duplicates.</li>
+          <li>Agency comes from the rep name in Fulfil (e.g. "Mary Rentfro - Fine Lines"). DYA isn't in this competition.</li>
+          <li>New account = the customer's first non-canceled order in Fulfil, any channel. Reactivated = has history but no order yet in 2026.</li>
+          <li>Orders billed to the rep's own account (customer name matches the rep) are set aside as samples/personal orders.</li>
+          <li>The new-account or reactivation bonus is earned once per customer, on its first order in the competition.</li>
+          <li>Draft MarketTime orders count once they have a rep; they're marked "pending" in detail views.</li>
+          <li>Raffle eligibility uses the order date: written Oct 15 – Nov 6 (first drawing, extended from Oct 30), on or before Nov 20 (second) or Dec 15 (final). Credits carry forward to every later drawing.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub" style="margin-bottom:8px">Set aside (${res.excluded.length})</h3>
+        ${res.excluded.length ? `<div class="table-wrap" style="max-height:340px;overflow:auto"><table class="t"><thead><tr><th>Order</th><th>Customer</th><th class="n">Amount</th><th>Why</th></tr></thead><tbody>
+          ${res.excluded.map(r => `<tr><td class="small">${esc(r.so)}<div class="muted">${esc(fmtDate(r.d))}</div></td><td class="small">${esc(titleCust(r.cust))}</td><td class="n small">${money(r.merch)}</td><td class="small">${esc(r.reason)}</td></tr>`).join("")}
+        </tbody></table></div>` : `<p class="muted">Nothing set aside.</p>`}
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="adm-demo">
+    <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">For leadership walkthroughs</div><h2 class="section">Demo tools</h2></div></div>
+    <div class="grid three">
+      <div class="field"><label for="preview-date">Preview the app as of a date</label><input id="preview-date" type="date" min="${CONFIG.start}" max="2026-12-31" value="${esc(state.previewDate || "")}"><div class="btn-row"><button class="btn ghost sm" data-action="set-preview">Apply</button>${state.previewDate ? `<button class="btn-text" data-action="clear-preview">Back to today</button>` : ""}</div><span class="small muted">Changes countdowns, drawing readiness and the weekly window. Orders after this date are hidden.</span></div>
+      <div class="field"><label for="crush-agency">Preview the 100% celebration</label><select id="crush-agency">${CONFIG.agencies.map(a => `<option value="${a.id}" ${state.previewCrush === a.id ? "selected" : ""}>${esc(a.name)}</option>`).join("")}</select><div class="btn-row"><button class="btn ghost sm" data-action="crush">Show it</button>${state.previewCrush ? `<button class="btn-text" data-action="crush-off">Turn off</button>` : ""}</div><span class="small muted">Display only. Totals and payouts don't change.</span></div>
+      <div class="field"><span class="lbl">Demo storage</span><p class="small">${Store.mode === "shared" ? "Results are in this page's shared store." : "Results are saved in this browser only."}</p>${Store.mode === "local" ? `<button class="btn ghost sm" data-action="reset-local-ask">Clear this browser's demo data</button>${state.resetAsk ? `<div class="confirm-box" style="margin-top:8px"><div>Clear saved drawings and admin fixes in this browser?</div><div class="btn-row"><button class="btn sm" data-action="reset-local">Clear</button><button class="btn ghost sm" data-action="reset-cancel">Cancel</button></div></div>` : ""}` : ""}</div>
+    </div>
+
+  </section>
+
+  <section class="card" id="adm-codes">
+    <div class="card-head"><div style="margin-right:auto"><div class="eyebrow">Only the page owner can see these</div><h2 class="section">Agency access codes</h2></div></div>
+    <p class="small muted" style="margin-bottom:12px">Send each agency only its own code. Each agency's results are encrypted with that code, so it can't open another agency's numbers. Reps can type it with or without the dashes.</p>
+    ${state.codes ? `<div class="table-wrap"><table class="t"><thead><tr><th>Agency</th><th>Access code</th><th></th></tr></thead><tbody>
+      ${CONFIG.agencies.map(ag => `<tr><td style="font-weight:700">${esc(ag.name)}</td><td><code class="num" style="font-size:15px;letter-spacing:.06em">${esc(state.codes[ag.id] || "—")}</code></td><td style="text-align:right"><button class="btn ghost sm" data-action="copy-code" data-id="${ag.id}">${I.copy} Copy</button></td></tr>`).join("")}
+    </tbody></table></div>` : `<div class="notice">${I.lock}<div class="small">Codes show here for the page owner only.</div></div>`}
+    <div class="notice pine" style="margin-top:14px">${I.shield}<div class="small"><b>How agency access works.</b> The page reps open holds each agency's results locked with that agency's code; no codes and no raw order data are in it. It's rebuilt from Fulfil every morning and afternoon, so new orders, your admin fixes and saved drawing winners reach reps at the next update. Admin tools and raw orders are only available to Softies team members with edit access.</div></div>
+  </section>`;
+}
+
+/* Backup to the daily scheduled refresh: when a Softies editor opens the admin view and the
+   shared numbers are more than 12 hours old, pull from Fulfil quietly and share the result. */
+function maybeAutoRefresh() {
+  if (state.autoTried || !isAdmin() || !state.canEditPage) return;
+  setTimeout(() => {
+    const age = Date.now() - Date.parse(state.dataMeta.refreshedAt);
+    if (state.autoTried || !isAdmin() || !(age > 12 * 3600 * 1000)) return;
+    state.autoTried = true; refreshFromFulfil(true);
+  }, 4000);
+}
+async function refreshFromFulfil(quiet) {
+  const btn = $("#refresh-btn"); if (btn) { btn.disabled = true; btn.textContent = "Refreshing…"; }
+  try {
+    const mcp = await cap("mcp");
+    if (!mcp) { if (!quiet) toast("Live refresh needs the Fulfil connector. Open this page in Claude while signed in to the Softies account."); return; }
+    const res = await mcp.callTool("Fulfil", "query_data_warehouse", { query: FULFIL_SQL, limit: 1000 }, { cache: false });
+    let p = res && res.payload;
+    if (typeof p === "string") { try { p = JSON.parse(p); } catch (e) {} }
+    if (!p || !Array.isArray(p.results)) {
+      const txt = res && res.content && res.content.find(c => c.type === "text");
+      if (txt) { try { p = JSON.parse(txt.text); } catch (e) {} }
+    }
+    const rows = p && Array.isArray(p.results) ? p.results : null;
+    if (!rows || (rows.length && !("id" in rows[0] && "d" in rows[0]))) { toast("Fulfil answered, but not in the expected shape. Nothing changed."); return; }
+    state.rows = rows;
+    state.dataMeta = { refreshedAt: new Date().toISOString(), source: "Live refresh from Fulfil" };
+    const shared = await Store.saveOrders(rows, state.dataMeta);
+    recompute(); render();
+    toast(`Refreshed: ${rows.length} Fulfil records.${shared ? " Admin numbers updated; reps see them at the next scheduled update." : ""}${rows.length >= 1000 ? " Hit the 1,000-row limit; contact support to raise it." : ""}`, 5200);
+  } catch (e) {
+    const code = e && e.code;
+    if (quiet) return;
+    toast(code === "not_granted" || code === "permission_denied" ? "Fulfil access wasn't allowed for this page." :
+      code === "server_not_connected" || code === "not_connected" ? "Connect Fulfil in Claude's connector settings, then try again." :
+      "Couldn't reach Fulfil just now. The current numbers are unchanged.");
+  } finally {
+    const b = $("#refresh-btn"); if (b) { b.disabled = false; b.innerHTML = I.refresh + " Refresh from Fulfil"; }
+  }
+}
+
+/* ================= SIGN IN ================= */
+function renderSignIn() {
+  const remembered = safeLS.get("s2w.remember");
+  return `
+  <div class="signin"><div class="signin-box">
+    <div class="signin-hero">
+      <div class="brand-mark" style="width:64px;height:64px" aria-hidden="true"></div>
+      <h1>Softies <span>Spin to Win</span></h1>
+      <p>${esc(CONFIG.tagline)}</p>
+      <span class="chip">${I.calendar} Q4 2026 · Oct 15 – Dec 15</span>
+    </div>
+    <div class="signin-cards">
+      <form class="card" id="f-agency" autocomplete="off">
+        <div class="eyebrow">Agency team</div>
+        <h2 class="section">See your agency</h2>
+        <div class="field"><label for="si-agency">Agency</label><select id="si-agency">${CONFIG.agencies.map(a => `<option value="${a.id}" ${remembered && remembered.agencyId === a.id ? "selected" : ""}>${esc(a.name)}</option>`).join("")}</select></div>
+        <div class="field"><label for="si-code">Access code</label><input id="si-code" type="password" autocapitalize="characters" spellcheck="false" placeholder="From your Softies sales manager"></div>
+        <label class="toggle" style="justify-self:start"><input type="checkbox" id="si-remember" checked> Keep me signed in on this device</label>
+        <div class="err" id="err-agency" aria-live="polite"></div>
+        <button class="btn" type="submit" id="si-go">${I.users} Enter</button>
+      </form>
+      ${!window.claude ? "" : `<div class="card" style="display:grid;gap:12px;align-content:start">
+        <div class="eyebrow">Softies team</div>
+        <h2 class="section">Administrator</h2>
+        ${state.canEditPage
+          ? `<p class="small muted">National overview, grand prize ranking, drawings and data fixes.</p><div class="btn-row"><button class="btn" type="button" data-action="owner-admin">${I.shield} Continue as Softies admin</button></div>`
+          : `<p class="small muted">Admin tools open automatically for Softies team members with edit access. Open this page while signed in to Claude.</p>`}
+      </div>`}
+    </div>
+    <p class="small muted" style="text-align:center">Each agency's results are locked with its own code. Lost your code? Ask your Softies sales manager.</p>
+  </div></div>`;
+}
+function bindSignIn() {
+  $("#f-agency").addEventListener("submit", async e => {
+    e.preventDefault();
+    const id = $("#si-agency").value, code = $("#si-code").value;
+    const err = $("#err-agency"), btn = $("#si-go");
+    if (!normCode(code)) { err.textContent = "Enter your agency's access code."; return; }
+    btn.disabled = true; err.textContent = "";
+    try {
+      const payload = await openVault(id, code);
+      state.payload = payload;
+      safeSS.set("s2w.code", { agencyId: id, code: normCode(code) });
+      if ($("#si-remember").checked) safeLS.set("s2w.remember", { agencyId: id, code: normCode(code) }); else safeLS.del("s2w.remember");
+      signIn({ role: "agency", agencyId: id });
+    } catch (x) {
+      err.textContent = x && x.message === "no-data" ? "This agency's results aren't published yet. Check back soon." : "That code doesn't match this agency. Check with your Softies sales manager.";
+      btn.disabled = false;
+    }
+  });
+}
+function signIn(sess) {
+  state.session = sess; safeSS.set("s2w.session", sess);
+  if (sess.role === "agency") state.agencyId = sess.agencyId;
+  state.wheel = { drawId: null, spinning: false, angle: 0, pending: null };
+  location.hash = "my-agency"; readHash(); render(); window.scrollTo(0, 0);
+  maybeAutoRefresh();
+}
+
+/* ---------- After render: animations, canvases, milestones ---------- */
+function afterRender(sc) {
+  requestAnimationFrame(() => document.querySelectorAll(".ribbon-fill[data-w]").forEach(el => { el.style.width = el.dataset.w + "%"; }));
+  if (state.route === "cozy-credits") updateCalc();
+  if (state.route === "prize-drawings") {
+    const sel = drawStatus(sc.agency.id).find(d => d.id === state.wheel.drawId);
+    if (sel) drawWheel(Engine.drawPool(sc.agency, sel).pool, state.wheel.angle);
+  }
+  if (state.route === "my-agency") {
+    const a = sc.agency;
+    const p = state.previewCrush === a.id ? 1 : a.pct;
+    const hit = CONFIG.milestones.filter(m => p * 100 >= m).pop();
+    if (hit) {
+      const key = "s2w.ms." + a.id + "." + hit + (state.previewCrush === a.id ? ".preview" : "");
+      if (!safeLS.get(key) || state.previewCrush === a.id) { safeLS.set(key, 1); setTimeout(() => confetti(hit === 100), 500); if (hit < 100) toast(`${a.name} hit ${hit}% of goal!`); }
+    }
+  }
+}
+
+/* ---------- Events ---------- */
+document.addEventListener("click", async e => {
+  const jump = e.target.closest("[data-jump]");
+  if (jump) { e.preventDefault(); const t = document.getElementById(jump.dataset.jump); if (t) t.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" }); return; }
+  const el = e.target.closest("[data-action]"); if (!el) return;
+  const act = el.dataset.action;
+  const admin = isAdmin();
+  switch (act) {
+    case "signout": state.session = null; state.payload = null; safeSS.del("s2w.session"); safeSS.del("s2w.code"); safeLS.del("s2w.remember"); state.previewCrush = null; history.replaceState(null, "", location.pathname + location.search); render(); break;
+    case "owner-admin": if (state.canEditPage) signIn({ role: "admin" }); break;
+    case "pick-agency": if (admin) { state.agencyId = el.dataset.id; safeLS.set("s2w.view.agency", state.agencyId); state.wheel.pending = null; state.wheel.drawId = null; render(); } break;
+    case "open-agency": if (admin) { state.agencyId = el.dataset.id; goRoute("my-agency"); } break;
+    case "sort": state.sort = el.dataset.sort; render(); break;
+    case "pick-draw": state.wheel.drawId = el.dataset.id; state.wheel.pending = null; render(); break;
+    case "spin": if (admin) { if (state.wheel.pending) { state.wheel.pending = null; render(); } spin(); } break;
+    case "confirm-winner": if (admin) confirmWinner(); break;
+    case "void-ask": if (admin) { state.voidAsk = scope().agency.id + ":" + el.dataset.id; render(); } break;
+    case "void-cancel": state.voidAsk = null; render(); break;
+    case "void": if (admin) { const aid = scope().agency.id; state.draws = state.draws.filter(r => !(r.agencyId === aid && r.drawId === el.dataset.id)); state.voidAsk = null; await Store.saveDraws(); toast("Result removed."); render(); } break;
+    case "csv": exportCSV(); break;
+    case "copy-code": if (state.codes) { const c = state.codes[el.dataset.id]; try { await navigator.clipboard.writeText(c); toast("Code copied."); } catch (x) { toast(c); } } break;
+    case "copy-email": copyEmail(true); break;
+    case "copy-text": copyEmail(false); break;
+    case "save-email": saveEmail(); break;
+    case "map-rep": if (admin) { const s = $("#" + el.dataset.sel); if (!s.value) { toast("Choose an agency first."); return; } state.settings.repAgency[s.dataset.rep] = s.value; await Store.saveSettings(); recompute(); render(); toast("Rep mapped. Totals updated."); } break;
+    case "unmap-rep": if (admin) { delete state.settings.repAgency[el.dataset.rep]; await Store.saveSettings(); recompute(); render(); } break;
+    case "assign-order": if (admin) {
+      const id = el.dataset.id, ag = $("#oa-" + id).value, rep = $("#or-" + id).value.trim();
+      if (!ag) { toast("Choose an agency first."); return; }
+      if (ag !== "np" && !rep) { toast("Add the rep's name."); return; }
+      state.settings.orderAssign[id] = { agency: ag, rep: rep || "Not in competition" }; await Store.saveSettings(); recompute(); render(); toast("Order assigned. Totals updated."); } break;
+    case "unassign-order": if (admin) { delete state.settings.orderAssign[el.dataset.id]; await Store.saveSettings(); recompute(); render(); } break;
+    case "review": if (admin) { if (el.dataset.v) state.settings.newReview[el.dataset.cid] = el.dataset.v; else delete state.settings.newReview[el.dataset.cid]; await Store.saveSettings(); recompute(); render(); } break;
+    case "refresh-fulfil": if (admin) refreshFromFulfil(); break;
+    case "set-preview": if (admin) { const v = $("#preview-date").value; state.previewDate = v || null; recompute(); render(); } break;
+    case "clear-preview": state.previewDate = null; recompute(); render(); break;
+    case "crush": if (admin) { state.previewCrush = $("#crush-agency").value; state.agencyId = state.previewCrush; goRoute("my-agency"); } break;
+    case "crush-off": state.previewCrush = null; render(); break;
+    case "reset-local-ask": state.resetAsk = true; render(); break;
+    case "reset-cancel": state.resetAsk = false; render(); break;
+    case "reset-local": safeLS.del("s2w.local"); state.settings = { repAgency: {}, orderAssign: {}, newReview: {} }; state.draws = []; state.resetAsk = false; recompute(); render(); toast("Demo data cleared."); break;
+  }
+});
+document.addEventListener("input", e => { if (e.target.closest(".calc")) updateCalc(); });
+window.addEventListener("hashchange", () => { readHash(); state.voidAsk = null; render(); window.scrollTo(0, 0); });
+let rsT; window.addEventListener("resize", () => { clearTimeout(rsT); rsT = setTimeout(() => { if (state.route === "prize-drawings" && !state.wheel.spinning) { const sc = scope(); if (!sc) return; const sel = drawStatus(sc.agency.id).find(d => d.id === state.wheel.drawId); if (sel) drawWheel(Engine.drawPool(sc.agency, sel).pool, state.wheel.angle); } }, 150); });
+if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => render());
+
+async function exportCSV() {
+  const sc = scope(), a = sc.agency, ranked = Engine.rank(a.reps, state.sort);
+  const q = v => `"${String(v).replace(/"/g, '""')}"`;
+  const csv = ["Rank,Sales rep,Total sales written,% of agency goal,Qualifying orders,New accounts,Reactivated accounts,Cozy Credits"]
+    .concat(ranked.map(r => [r.rank, q(r.name), r.sales.toFixed(2), (r.contribution * 100).toFixed(2), r.orders, r.newAcc, r.react, r.credits].join(","))).join("\n");
+  await saveFile(`spin-to-win-${a.id}-leaderboard-${today()}.csv`, csv, "text/csv", csv);
+}
+async function saveFile(filename, data, type, fallbackText) {
+  const dl = await cap("downloads");
+  if (dl) {
+    try { await dl.save({ filename, data: new Blob([data], { type }) }); return; }
+    catch (e) { if (e && (e.code === "cancelled" || e.code === "declined")) return; }
+  }
+  try { await navigator.clipboard.writeText(fallbackText); toast("Saving files isn't available here, so it was copied to your clipboard instead."); }
+  catch (e) { toast("Saving files isn't available in this view."); }
+}
+async function copyEmail(rich) {
+  const w = weekly(scope());
+  const html = emailHTML(w), text = emailText(w);
+  try {
+    if (rich && window.ClipboardItem) {
+      await navigator.clipboard.write([new ClipboardItem({ "text/html": new Blob([html], { type: "text/html" }), "text/plain": new Blob([text], { type: "text/plain" }) })]);
+    } else await navigator.clipboard.writeText(text);
+    toast(rich ? "Copied with formatting. Paste into your email." : "Copied as plain text.");
+  } catch (e) {
+    if (rich) { try { await navigator.clipboard.writeText(text); toast("Copied as plain text (formatted copy isn't allowed here)."); return; } catch (e2) {} }
+    const r = document.createRange(); const node = $("#email-preview"); r.selectNodeContents(node);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    toast("Copy is blocked here. The snapshot is selected; press Ctrl/Cmd+C.");
+  }
+}
+async function saveEmail() {
+  const w = weekly(scope());
+  const doc = `<!doctype html><html><head><meta charset="utf-8"><title>${esc(w.a.name)} · Softies Spin to Win weekly snapshot</title></head><body style="margin:0">${emailHTML(w)}</body></html>`;
+  await saveFile(`spin-to-win-${w.a.id}-weekly-${today()}.html`, doc, "text/html", emailText(w));
+}
+
+/* ---------- Boot ---------- */
+async function restoreAgency() {
+  let saved = safeSS.get("s2w.code");
+  if (!state.session) {
+    const rem = safeLS.get("s2w.remember");
+    if (rem && rem.agencyId && rem.code) { saved = rem; state.session = { role: "agency", agencyId: rem.agencyId }; safeSS.set("s2w.session", state.session); }
+  }
+  if (!state.session || state.session.role !== "agency") return;
+  try {
+    if (!saved || saved.agencyId !== state.session.agencyId) throw new Error("none");
+    state.payload = await openVault(saved.agencyId, saved.code);
+  } catch (x) {
+    state.session = null; state.payload = null; safeSS.del("s2w.session"); safeSS.del("s2w.code"); safeLS.del("s2w.remember");
+  }
+}
+
+(async function boot() {
+  // Website copy: the page stays the same and the locked results arrive in vault.json, refreshed twice a day.
+  if (!VAULT && !window.claude) {
+    try { const r = await fetch("vault.json?t=" + Date.now(), { cache: "no-store" }); if (r.ok) VAULT = await r.json(); } catch (x) {}
+  }
+  readHash();
+  recompute();
+  await restoreAgency();
+  render();
+  Store.init();
+  cap("user").then(async u => { if (!u) return; try { state.canEditPage = !!(await u.canEdit());
+    if (state.session && state.session.role === "admin" && !state.canEditPage) { state.session = null; safeSS.del("s2w.session"); }
+    if (!state.session || isAdmin()) render(); maybeAutoRefresh(); } catch (e) {} });
+})();
+
+</script>
+</body></html>
