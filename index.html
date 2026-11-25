@@ -480,7 +480,7 @@ const CONFIG = {
   draws: [
     // Round 1 extended from Oct 30 to Nov 6 (orders written Oct 15 – Nov 6)
     { id: "oct", date: "2026-11-06", prize: 500,  name: "First Drawing" },
-    { id: "nov", date: "2026-11-20", prize: 750,  name: "Second Drawing" },
+    { id: "nov", date: "2026-11-30", prize: 750,  name: "Second Drawing" }, // moved from Nov 20 to Nov 30
     { id: "dec", date: "2026-12-15", prize: 1000, name: "Final Drawing" }
   ],
   credit: { min: 500, tier1: 2500, tier1Bonus: 2, tier2: 5000, tier2Bonus: 5, newBonus: 5, dormantBonus: 3, powerBonus: 2 },
@@ -1677,7 +1677,7 @@ function viewAdmin(sc) {
           <li>Orders billed to the rep's own account (customer name matches the rep) are set aside as samples/personal orders.</li>
           <li>The new-account or reactivation bonus is earned once per customer, on its first order in the competition.</li>
           <li>Draft MarketTime orders count once they have a rep; they're marked "pending" in detail views.</li>
-          <li>Raffle eligibility uses the order date: written Oct 15 – Nov 6 (first drawing, extended from Oct 30), on or before Nov 20 (second) or Dec 15 (final). Credits carry forward to every later drawing.</li>
+          <li>Raffle eligibility uses the order date: written Oct 15 – Nov 6 (first drawing, extended from Oct 30), on or before Nov 30 (second, moved from Nov 20) or Dec 15 (final). Credits carry forward to every later drawing.</li>
         </ul>
       </div>
       <div>
